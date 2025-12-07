@@ -1,8 +1,15 @@
 from datetime import datetime
+import logging
+import logging.config
 import calendar
+from time import sleep
 import pandas as pd
 import typer
 from tm.api import get_all_order_list, get_all_staff, get_order_detail
+from configurations import logging_config
+
+logging.config.dictConfig(config=logging_config)
+logger = logging.getLogger(__name__)
 
 app = typer.Typer()
 
@@ -112,6 +119,17 @@ def process_order(staff, order):
         print(order_id)
         raise e
 
+@app.command()
+def testing():
+    while True:
+        try:
+            staffs = get_all_staff()
+            logger.info(f'Total staffs detected: {len(staffs)}')
+        except Exception as ex:
+            logger.warning(ex, exc_info=True)
+            exit(1)
+        finally:
+            sleep(30)
 
 @app.command()
 def ongoing():
@@ -131,7 +149,6 @@ def ongoing():
     df = df.set_index("order_id")
     df.to_excel("ongoing.xlsx")
     print(df)
-
 
 @app.command()
 def historical(year: int, month: int):
@@ -167,7 +184,6 @@ def historical(year: int, month: int):
     df = df.set_index("order_id")
     df.to_excel("historical.xlsx")
     print(df)
-
 
 if __name__ == "__main__":
     app()
