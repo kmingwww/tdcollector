@@ -11,4 +11,4 @@ wheels/
 
 .env
 
-tdcollector-cdc227d8c4e8.json
+service_account_credential.json
