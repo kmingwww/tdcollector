@@ -28,9 +28,17 @@ def read():
 
     if not values:
         logger.warning("No data found.")
-        return
+        return pd.DataFrame()
+    
+    header = values[0]
+    data = values[1:]
+    
+    # Pad rows that are shorter than the header
+    num_columns = len(header)
+    for row in data:
+        row.extend([''] * (num_columns - len(row)))
   
-    return pd.DataFrame(values[1:], columns=values[0])
+    return pd.DataFrame(data, columns=header)
 
 
 def write(df: pd.DataFrame,
@@ -80,7 +88,6 @@ def write(df: pd.DataFrame,
 
     # Write data in chunks
     for i in range(0, len(values), chunk_size):
-        logger.info(f"chunk: {i}")
         chunk = values[i:i + chunk_size]
         current_row = start_row + i
         
