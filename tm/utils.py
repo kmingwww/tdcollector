@@ -1,6 +1,7 @@
 
 from tm.api import get_order_detail
 import logging
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -97,11 +98,21 @@ def process_order(staff, order):
             ),
             "cloud_storage_item": (
                 next((x for x in cloud_storage_item.get("offerInstList") if x["offerType"] == "4"), {}).get("offerName")
-                # cloud_storage_item.get("offerInstList")[0].get("offerName")
                 if cloud_storage_item and cloud_storage_item.get("offerInstList")
                 else None
             ),
-            "uni5g_items": uni5g_items.get("mainOfferName") if uni5g_items else None
+            "uni5g_items": uni5g_items.get("mainOfferName") if uni5g_items else None,
+            "premium_value_tv": next(
+                (
+                    agreement.get("agreementName")
+                    for agreement in (internet_items.get("agreementList") or [])
+                    if agreement.get("agreementName")
+                    and re.match(r"Premium Value .*TV", agreement.get("agreementName"))
+                ),
+                None,
+            )
+            if internet_items
+            else None,
         }
         return datapoint
     except Exception as e:

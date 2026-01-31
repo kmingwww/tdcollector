@@ -18,12 +18,6 @@ logger = logging.getLogger(__name__)
 app = typer.Typer()
 
 @app.command()
-def testing():
-    staffs = get_all_staff()
-    staffs = [s for s in staffs if s["staffName"].startswith("THAM LEONG")]
-    print(staffs)
-
-@app.command()
 def testing_loop():
     while True:
         try:
@@ -86,19 +80,19 @@ def download_data(
         raise Exception("Month must be in between 1 and 12")
     target = datetime(year, month, 1)
     month_range = calendar.monthrange(year, month)
-    createdDateFrom = target.strftime("%Y%m") + "01000000"
-    createdDateTo = target.strftime("%Y%m") + str(month_range[1]) + "235959"
+    created_date_from = target.strftime("%Y%m") + "01000000"
+    created_date_to = target.strftime("%Y%m") + str(month_range[1]) + "235959"
 
-    logger.info(f"Downloading data for {source} from {createdDateFrom} to {createdDateTo}")
+    logger.info(f"Downloading data for {source.value} from {created_date_from} to {created_date_to}")
     staffs = get_all_staff()
-    # staffs = [s for s in staffs if s["staffName"].startswith("THAM LEONG")]
+    on_way_flag = "Y" if source == source.ongoing else "N"
 
     if gsheet:
         df = read()
         df.set_index("order_id", inplace=True)
         for idx, staff in enumerate(staffs):
             all_order = get_all_order_list(
-                staff["staffId"], "N", createdDateFrom, createdDateTo
+                staff["staffId"], on_way_flag, created_date_from, created_date_to
             )
             logger.info(f"Progress {idx+1}/{len(staffs)}: [{staff["staffId"]}] {staff["staffName"]} with order {len(all_order)} counts")
             for order in all_order:
@@ -122,7 +116,7 @@ def download_data(
         data = []
         for idx, staff in enumerate(staffs):
             all_order = get_all_order_list(
-                staff["staffId"], "N", createdDateFrom, createdDateTo
+                staff["staffId"], on_way_flag, created_date_from, created_date_to
             )
             logger.info(f"Progress {idx+1}/{len(staffs)}: [{staff["staffId"]}] {staff["staffName"]} with order {len(all_order)} counts")
             for order in all_order:
@@ -130,7 +124,7 @@ def download_data(
                 data.append(new_row_data)
         df = pd.DataFrame(data)
         df = df.set_index("order_id")
-        df.to_excel(f"{yearmonth if yearmonth else 'ongoing'}.xlsx")
+        df.to_excel(f"{source.value}-{yearmonth}.xlsx")
 
 
 @app.command()

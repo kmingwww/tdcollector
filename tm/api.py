@@ -15,10 +15,13 @@ COOKIE = os.getenv("COOKIE")
 
 logger = logging.getLogger(__name__)
 
+
 def rate_limit(calls_per_second):
     min_interval = 1.0 / calls_per_second
+
     def decorator(func):
         last_time_called = 0.0
+
         @wraps(func)
         def wrapper(*args, **kwargs):
             nonlocal last_time_called
@@ -29,8 +32,11 @@ def rate_limit(calls_per_second):
             ret = func(*args, **kwargs)
             last_time_called = time.perf_counter()
             return ret
+
         return wrapper
+
     return decorator
+
 
 def retry(exceptions, tries=3, delay=1):
     def decorator(func):
@@ -44,8 +50,10 @@ def retry(exceptions, tries=3, delay=1):
                     logger.info(f"Retrying... {_tries - 1} tries left")
                     time.sleep(delay)
                     _tries -= 1
-            return func(*args, **kwargs) # Last attempt
+            return func(*args, **kwargs)  # Last attempt
+
         return wrapper
+
     return decorator
 
 
@@ -85,7 +93,7 @@ def get_order_list(data):
     return response
 
 
-def get_all_order_list(staffId, onWayFlag, createdDateFrom = None, createdDateTo = None):
+def get_all_order_list(staffId, onWayFlag, createdDateFrom=None, createdDateTo=None):
     # staffId: 621394
     # onWayFlag: Y
     # createdDateFrom: 20250401000000
@@ -94,26 +102,16 @@ def get_all_order_list(staffId, onWayFlag, createdDateFrom = None, createdDateTo
     results = []
 
     while True:
-        if onWayFlag == "Y":
-            data = {
-                "dPartyCode": staffId,
-                "pageSize": 50,
-                "onWayFlag": onWayFlag,  # Y/N
-                "pageNum": page_number,
-                "dPartyType": "E",
-                "extData": {"senario": "esales-monthly-order"},
-            }
-        else:
-            data = {
-                "dPartyCode": staffId,
-                "pageSize": 50,
-                "onWayFlag": onWayFlag,  # Y/N
-                "pageNum": page_number,
-                "dPartyType": "E",
-                "extData": {"senario": "esales-monthly-order"},
-                "createdDateFrom": createdDateFrom,
-                "createdDateTo": createdDateTo,
-            }
+        data = {
+            "createdDateFrom": createdDateFrom,
+            "createdDateTo": createdDateTo,
+            "dPartyType": "E",
+            "extData": {"drmOrderOptimizeQuery": "Y"},
+            "onWayFlag": onWayFlag, # Y/N
+            "pageNum": page_number,
+            "pageSize": 50,
+            "partyCodes": staffId,
+        }
         response = get_order_list(data)
         result_json = response.json()
         results = [*results, *result_json["data"]]
@@ -180,7 +178,7 @@ def get_all_staff():
         data = {"pageSize": 50, "pageNum": page_number}
         response = get_staff(data)
         result_json = response.json()
-        if("data" not in result_json):
+        if "data" not in result_json:
             raise Exception(response.json())
         results = [*results, *result_json["data"]]
         if len(result_json["data"]) != data["pageSize"]:
