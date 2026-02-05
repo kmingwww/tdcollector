@@ -122,6 +122,9 @@ def download_data(
             for order in all_order:
                 new_row_data = process_order(staff=staff, order=order)
                 data.append(new_row_data)
+        if len(data) == 0:
+            raise Exception("No data to copy.")
+        logger.info(f"Total Orders: {len(data)}")
         df = pd.DataFrame(data)
         df = df.set_index("order_id")
         df.to_excel(f"{source.value}-{yearmonth}.xlsx")
