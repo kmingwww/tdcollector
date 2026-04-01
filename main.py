@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing_extensions import Annotated
 import logging
 import logging.config
@@ -147,6 +147,34 @@ def ongoing():
     df = pd.DataFrame(data)
     df = df.set_index("order_id")
     df.to_excel("ongoing.xlsx")
+
+
+@app.command()
+def run_all():
+    """Run download-data for the past 3 months (including current month) for both historical and ongoing sources with gsheet."""
+    logger.info("Starting run_all process...")
+    
+    # Generate months newest → oldest (including current month)
+    months = []
+    for i in range(3):
+        months.append(datetime.now() - timedelta(days=30*i))
+    
+    try:
+        for date in months:
+            year_month = date.strftime("%Y%m")
+            
+            # Run HISTORICAL
+            logger.info(f"Running HISTORICAL for {year_month}...")
+            download_data(source=Source.historical, yearmonth=year_month, gsheet=True)
+            
+            # Run ONGOING
+            logger.info(f"Running ONGOING for {year_month}...")
+            download_data(source=Source.ongoing, yearmonth=year_month, gsheet=True)
+        
+        logger.info("All months completed successfully.")
+    except Exception as ex:
+        logger.error(f"run_all failed: {ex}", exc_info=True)
+        raise
 
 
 @app.command()

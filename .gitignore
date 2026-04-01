@@ -11,4 +11,4 @@ wheels/
 
 .env
 
-service_account_credential.json
+service_account_credential*.json
