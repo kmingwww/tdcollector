@@ -1,60 +1,18 @@
 import os
 import requests
-import time
-from functools import wraps
 import json
 from hashlib import sha256
 from urllib.parse import urlencode
 import re
 import logging
 from dotenv import load_dotenv
+from common import rate_limit, retry
 
 load_dotenv()
 
 COOKIE = os.getenv("COOKIE")
 
 logger = logging.getLogger(__name__)
-
-
-def rate_limit(calls_per_second):
-    min_interval = 1.0 / calls_per_second
-
-    def decorator(func):
-        last_time_called = 0.0
-
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            nonlocal last_time_called
-            elapsed = time.perf_counter() - last_time_called
-            left_to_wait = min_interval - elapsed
-            if left_to_wait > 0:
-                time.sleep(left_to_wait)
-            ret = func(*args, **kwargs)
-            last_time_called = time.perf_counter()
-            return ret
-
-        return wrapper
-
-    return decorator
-
-
-def retry(exceptions, tries=3, delay=1):
-    def decorator(func):
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            _tries = tries
-            while _tries > 1:
-                try:
-                    return func(*args, **kwargs)
-                except exceptions:
-                    logger.info(f"Retrying... {_tries - 1} tries left")
-                    time.sleep(delay)
-                    _tries -= 1
-            return func(*args, **kwargs)  # Last attempt
-
-        return wrapper
-
-    return decorator
 
 
 def generateSigncode(method: str, path: str, data: dict):

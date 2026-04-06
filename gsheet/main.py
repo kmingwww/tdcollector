@@ -4,6 +4,8 @@ from googleapiclient.discovery import build
 import pandas as pd
 import re
 import logging
+import os
+from common import retry
 
 logger = logging.getLogger(__name__)
 
@@ -12,17 +14,18 @@ logger = logging.getLogger(__name__)
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = "1G-wMt-gB36Kh8yLAJS3MCKvdIhhgT73MnBNctdKbAQY"
-SAMPLE_RANGE_NAME = "Sheet1!A:Z"
+SPREADSHEET_ID = os.getenv("SPREADSHEET_ID", "1D1jB-6fH1a9UXXH8elbK77CVUM-wEYKD8dhNQNxJw9s")
+RANGE_NAME = os.getenv("RANGE_NAME", "COPYORDER_CONT!A:Z")
 
 CREDENTIAL_FILE = "service_account_credential.json"
 
+@retry(exceptions=TimeoutError, tries=5, delay=10)
 def read():
     creds = Credentials.from_service_account_file(CREDENTIAL_FILE, scopes=SCOPES)
     service = build("sheets", "v4", credentials=creds, cache_discovery=False)
     sheet = service.spreadsheets()
     result = (sheet.values()
-            .get(spreadsheetId=SAMPLE_SPREADSHEET_ID, range=SAMPLE_RANGE_NAME)
+            .get(spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME)
             .execute())
     values = result.get("values", [])
 
@@ -43,8 +46,8 @@ def read():
 
 def write(df: pd.DataFrame,
           include_index = True,
-          spreadsheet_id: str = SAMPLE_SPREADSHEET_ID,
-          range_name: str = SAMPLE_RANGE_NAME,
+          spreadsheet_id: str = SPREADSHEET_ID,
+          range_name: str = RANGE_NAME,
           clear_before_write: bool = False,
           chunk_size: int = 10000):
     """Write a pandas DataFrame to a Google Sheet range using Sheets API.
