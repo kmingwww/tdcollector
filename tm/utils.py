@@ -1,4 +1,5 @@
 
+from common.decorators import retry
 from tm.api import get_order_detail
 import logging
 import re
@@ -10,19 +11,19 @@ def get_residential_voice_number(residential_voice_item):
         return residential_voice_item["prefix"] + residential_voice_item["accNbr"]
     return None
 
-
+@retry(exceptions=Exception, tries=5, delay=10)
 def process_order(staff, order):
-    order_id = order["orderId"]
-    get_order_detail_data = {
-        "custOrderId": order["orderId"],
-        "custOrderNbr": order["orderNbr"],
-    }
-    get_order_detail_response = get_order_detail(get_order_detail_data)
-    order_detail = get_order_detail_response.json()["data"]
-    order_items = order_detail["orderItemList"]
-    installation_info_list = order_detail["installationInfoList"]
-
     try:
+        order_id = order["orderId"]
+        get_order_detail_data = {
+            "custOrderId": order["orderId"],
+            "custOrderNbr": order["orderNbr"],
+        }
+        get_order_detail_response = get_order_detail(get_order_detail_data)
+        order_detail = get_order_detail_response.json()["data"]
+        order_items = order_detail["orderItemList"]
+        installation_info_list = order_detail["installationInfoList"]
+        
         if len(installation_info_list) != 1:
             logger.info(
                 f"WARNING: NO INSTALLATION POSSIBLE for {staff["staffName"]} - {order_detail.get("orderId")}"
