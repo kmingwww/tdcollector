@@ -1,0 +1,2275 @@
+{
+	"code": "200",
+	"message": "Success",
+	"total": 31,
+	"pageSize": 10,
+	"pageNum": 1,
+	"data": [
+		{
+			"orderId": 2605000109122056,
+			"orderNbr": "2605000109122056",
+			"crmOrderId": 2605000109122056,
+			"crmOrderNbr": "2605000109122056",
+			"custOrderId": 2605000109122056,
+			"custOrderNbr": "2605000109122056",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000109122056,
+			"externalOrderNbr": "2605000109122056",
+			"custId": 101003624321,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-26 16:16:55",
+			"acceptDate": "2026-05-26 10:02:56",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "8737986_1073741824"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605261012819550"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-26 11:11:19"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60123169309"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "319000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119895825,
+					"orderItemNbr": "2026052619895825",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005738831,
+					"acctNbr": "7038662297",
+					"subsId": 101134468228,
+					"prefix": "60",
+					"accNbr": "332716578",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 16:16:44",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119895823,
+					"orderItemNbr": "2026052619895823",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005738831,
+					"acctNbr": "7038662297",
+					"subsId": 101134471146,
+					"prefix": "60",
+					"accNbr": "BUNDLE19895823",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 409512,
+					"relatedMainOfferCode": "409512",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 16:16:55",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119895824,
+					"orderItemNbr": "2026052619895824",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005738831,
+					"acctNbr": "7038662297",
+					"subsId": 101134464470,
+					"prefix": "60",
+					"accNbr": "byppuchong@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306432,
+					"relatedMainOfferCode": "BROADBAND_BIZ_1G",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 16:16:32",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000119896838,
+					"orderItemNbr": "2026052619896838",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005738831,
+					"acctNbr": "7038662297",
+					"subsId": 101134467544,
+					"prefix": "60",
+					"accNbr": "HSTB11110321",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 16:16:37",
+					"postpaid": "1",
+					"serviceType": 90
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108876527,
+			"orderNbr": "2605000108876527",
+			"crmOrderId": 2605000108876527,
+			"crmOrderNbr": "2605000108876527",
+			"custOrderId": 2605000108876527,
+			"custOrderNbr": "2605000108876527",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108876527,
+			"externalOrderNbr": "2605000108876527",
+			"custId": 101005462247,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-26 15:45:12",
+			"acceptDate": "2026-05-24 15:06:02",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"mainOfferName": "Unifi Biz 2Gbps Ultra TV (Free TV75)(MESH7)",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "7050325_2147483648"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605241510138572"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-24 16:10:07"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+					"attrId": 100688,
+					"attrName": "Contact Email",
+					"value": "honhockngen@gmail.com"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60197154118"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "369000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119564150,
+					"orderItemNbr": "2026052419564150",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729603,
+					"acctNbr": "7038563834",
+					"subsId": 101134069719,
+					"prefix": "60",
+					"accNbr": "BUNDLE19564150",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 409528,
+					"relatedMainOfferCode": "409528",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 15:45:12",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119564151,
+					"orderItemNbr": "2026052419564151",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729603,
+					"acctNbr": "7038563834",
+					"subsId": 101134075122,
+					"prefix": "60",
+					"accNbr": "blue2@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306434,
+					"relatedMainOfferCode": "BROADBAND_BIZ_2G",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 15:44:48",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000119564152,
+					"orderItemNbr": "2026052419564152",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729603,
+					"acctNbr": "7038563834",
+					"subsId": 101134068857,
+					"prefix": "60",
+					"accNbr": "73558079",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 15:45:00",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119564266,
+					"orderItemNbr": "2026052419564266",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729603,
+					"acctNbr": "7038563834",
+					"subsId": 101134067839,
+					"prefix": "60",
+					"accNbr": "HSTB11104187",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 15:44:54",
+					"postpaid": "1",
+					"serviceType": 90
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108869737,
+			"orderNbr": "2605000108869737",
+			"crmOrderId": 2605000108869737,
+			"crmOrderNbr": "2605000108869737",
+			"custOrderId": 2605000108869737,
+			"custOrderNbr": "2605000108869737",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108869737,
+			"externalOrderNbr": "2605000108869737",
+			"custId": 101005466197,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-26 17:04:51",
+			"acceptDate": "2026-05-24 13:36:01",
+			"channelId": 1,
+			"channelName": "Point Of Sale",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"mainOfferName": "Unifi Home 1Gbps Premium Value with MAX (27M)",
+			"orderFeeInfo": {
+				"totalCharge": 100000000,
+				"totalChargeWithTax": 100000000,
+				"displayTotalCharge": "100.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "100.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 100000000,
+				"displayChargeToPay": "100.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 100000000,
+				"subtotalDisplay": "100.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "2406689_1073741824"
+				},
+				{
+					"attrCode": "UM_ORDER_CUST_AUTHENTICATION_METHOD",
+					"attrId": 400271,
+					"attrName": "Customer Authentication Method",
+					"value": "Manual"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605241341109757"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-24 14:40:56"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60128280114"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "0"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119557262,
+					"orderItemNbr": "2026052419557262",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005733180,
+					"acctNbr": "7038600768",
+					"subsId": 101134049822,
+					"prefix": "60",
+					"accNbr": "quah24@iptv",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 432532,
+					"relatedMainOfferCode": "432532",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 17:03:01",
+					"postpaid": "1",
+					"serviceType": 12
+				},
+				{
+					"orderItemId": 2605000119557261,
+					"orderItemNbr": "2026052419557261",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005733180,
+					"acctNbr": "7038600768",
+					"subsId": 101134059461,
+					"prefix": "60",
+					"accNbr": "333626720",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 309108,
+					"relatedMainOfferCode": "309108",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 17:04:40",
+					"postpaid": "1",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119557490,
+					"orderItemNbr": "2026052419557490",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005733180,
+					"acctNbr": "7038600768",
+					"subsId": 101134056413,
+					"prefix": "60",
+					"accNbr": "HSTB11104077",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 17:04:37",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119557259,
+					"orderItemNbr": "2026052419557259",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005733180,
+					"acctNbr": "7038600768",
+					"subsId": 101134052787,
+					"prefix": "60",
+					"accNbr": "BUNDLE19557259",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 439527,
+					"relatedMainOfferCode": "439527",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 17:04:51",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119557260,
+					"orderItemNbr": "2026052419557260",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005733180,
+					"acctNbr": "7038600768",
+					"subsId": 101134055765,
+					"prefix": "60",
+					"accNbr": "quah123@unifi",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306417,
+					"relatedMainOfferCode": "BROADBAND_HOME_1G",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-26 17:04:27",
+					"postpaid": "1",
+					"serviceType": 79
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108754494,
+			"orderNbr": "2605000108754494",
+			"crmOrderId": 2605000108754494,
+			"crmOrderNbr": "2605000108754494",
+			"custOrderId": 2605000108754494,
+			"custOrderNbr": "2605000108754494",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108754494,
+			"externalOrderNbr": "2605000108754494",
+			"custId": 101001345323,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-25 17:50:39",
+			"acceptDate": "2026-05-23 02:33:15",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "7604620_314572800"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605230241710568"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-23 03:41:28"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "601116659575"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "139000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119443881,
+					"orderItemNbr": "2026052319443881",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729618,
+					"acctNbr": "7038563966",
+					"subsId": 101133839607,
+					"prefix": "60",
+					"accNbr": "333719655",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 17:50:28",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119443879,
+					"orderItemNbr": "2026052319443879",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729618,
+					"acctNbr": "7038563966",
+					"subsId": 101133828856,
+					"prefix": "60",
+					"accNbr": "BUNDLE19443879",
+					"relatedMainOfferId": 406110,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 17:50:39",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119443880,
+					"orderItemNbr": "2026052319443880",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729618,
+					"acctNbr": "7038563966",
+					"subsId": 101133833794,
+					"prefix": "60",
+					"accNbr": "slflkitchen@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306426,
+					"relatedMainOfferCode": "BROADBAND_BIZ_300M",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 17:50:16",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000119443958,
+					"orderItemNbr": "2026052319443958",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005729618,
+					"acctNbr": "7038563966",
+					"subsId": 101133843046,
+					"prefix": "60",
+					"accNbr": "HSTB11102621",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 17:50:16",
+					"postpaid": "1",
+					"serviceType": 90
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108689713,
+			"orderNbr": "2605000108689713",
+			"crmOrderId": 2605000108689713,
+			"crmOrderNbr": "2605000108689713",
+			"custOrderId": 2605000108689713,
+			"custOrderNbr": "2605000108689713",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108689713,
+			"externalOrderNbr": "2605000108689713",
+			"custId": 101005179704,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-25 16:58:50",
+			"acceptDate": "2026-05-22 13:28:29",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_NIG_TROIKA_ID",
+					"attrId": 410091,
+					"attrName": "Troika ID",
+					"value": "TRO-1-1100247205"
+				},
+				{
+					"attrCode": "TM_CSC_CASE_ID",
+					"attrId": 410090,
+					"attrName": "CSC Case ID",
+					"value": "104492598"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "556979_524288000"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CSC_CASE_ID",
+					"attrId": 102195,
+					"attrName": "CSC Case Id",
+					"value": "104492598"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605221342751871"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-22 14:41:41"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60133549113"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "179000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119365601,
+					"orderItemNbr": "2026052219365601",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005726766,
+					"acctNbr": "7038534249",
+					"subsId": 101133696710,
+					"prefix": "60",
+					"accNbr": "HSTB11101019",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 16:58:30",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119364580,
+					"orderItemNbr": "2026052219364580",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005726766,
+					"acctNbr": "7038534249",
+					"subsId": 101133701290,
+					"prefix": "60",
+					"accNbr": "BUNDLE19364580",
+					"relatedMainOfferId": 406106,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 16:58:49",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119364581,
+					"orderItemNbr": "2026052219364581",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005726766,
+					"acctNbr": "7038534249",
+					"subsId": 101133703217,
+					"prefix": "60",
+					"accNbr": "infomativ24@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306428,
+					"relatedMainOfferCode": "BROADBAND_BIZ_500M",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 16:58:26",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000119364582,
+					"orderItemNbr": "2026052219364582",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005726766,
+					"acctNbr": "7038534249",
+					"subsId": 101133700288,
+					"prefix": "60",
+					"accNbr": "378870062",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 16:58:38",
+					"serviceType": 80
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108679781,
+			"orderNbr": "2605000108679781",
+			"crmOrderId": 2605000108679781,
+			"crmOrderNbr": "2605000108679781",
+			"custOrderId": 2605000108679781,
+			"custOrderNbr": "2605000108679781",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108679781,
+			"externalOrderNbr": "2605000108679781",
+			"custId": 101005457280,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-25 14:09:08",
+			"acceptDate": "2026-05-22 11:59:44",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "842699_314572800"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605221202541729"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-22 13:02:05"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+					"attrId": 100688,
+					"attrName": "Contact Email",
+					"value": "shanwong0318@gmail.com"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60162983736"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "139000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119351419,
+					"orderItemNbr": "2026052219351419",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133669855,
+					"prefix": "60",
+					"accNbr": "BUNDLE19351419",
+					"relatedMainOfferId": 406110,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:09:08",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119351421,
+					"orderItemNbr": "2026052219351421",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133670882,
+					"prefix": "60",
+					"accNbr": "342178875",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:08:57",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119351607,
+					"orderItemNbr": "2026052219351607",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133672654,
+					"prefix": "60",
+					"accNbr": "HSTB11100735",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:09:06",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119351420,
+					"orderItemNbr": "2026052219351420",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133673800,
+					"prefix": "60",
+					"accNbr": "atubeice7@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306426,
+					"relatedMainOfferCode": "BROADBAND_BIZ_300M",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:08:50",
+					"postpaid": "1",
+					"serviceType": 79
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108677545,
+			"orderNbr": "2605000108677545",
+			"crmOrderId": 2605000108677545,
+			"crmOrderNbr": "2605000108677545",
+			"custOrderId": 2605000108677545,
+			"custOrderNbr": "2605000108677545",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108677545,
+			"externalOrderNbr": "2605000108677545",
+			"custId": 101005457280,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-25 14:15:17",
+			"acceptDate": "2026-05-22 11:40:43",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "842797_314572800"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605221157527389"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-22 12:57:28"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+					"attrId": 100688,
+					"attrName": "Contact Email",
+					"value": "shanwong0318@gmail.com"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60162983736"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "139000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119347890,
+					"orderItemNbr": "2026052219347890",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133665916,
+					"prefix": "60",
+					"accNbr": "361878870",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:15:05",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119347889,
+					"orderItemNbr": "2026052219347889",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133668880,
+					"prefix": "60",
+					"accNbr": "atubeice@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306426,
+					"relatedMainOfferCode": "BROADBAND_BIZ_300M",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:14:59",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000119350623,
+					"orderItemNbr": "2026052219350623",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133677255,
+					"prefix": "60",
+					"accNbr": "HSTB11100719",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:15:06",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119347888,
+					"orderItemNbr": "2026052219347888",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133671568,
+					"prefix": "60",
+					"accNbr": "BUNDLE19347888",
+					"relatedMainOfferId": 406110,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-25 14:15:16",
+					"serviceType": 51
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108630370,
+			"orderNbr": "2605000108630370",
+			"crmOrderId": 2605000108630370,
+			"crmOrderNbr": "2605000108630370",
+			"custOrderId": 2605000108630370,
+			"custOrderNbr": "2605000108630370",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108630370,
+			"externalOrderNbr": "2605000108630370",
+			"custId": 101005457280,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-22 13:20:33",
+			"acceptDate": "2026-05-22 01:28:13",
+			"channelId": 29,
+			"channelName": "BPortal",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"mainOfferName": "Unifi Biz 2Gbps Ultra TV (Free TV75)(MESH7)",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "681678_2147483648"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605220135291648"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-22 02:35:05"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+					"attrId": 100688,
+					"attrName": "Contact Email",
+					"value": "shanwong0318@gmail.com"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60162983736"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "369000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119279942,
+					"orderItemNbr": "2026052219279942",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133594556,
+					"prefix": "60",
+					"accNbr": "380519903",
+					"relatedMainOfferId": 309319,
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-22 13:20:22",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119279981,
+					"orderItemNbr": "2026052219279981",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133597463,
+					"prefix": "60",
+					"accNbr": "HSTB11099743",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-22 13:20:08",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119279940,
+					"orderItemNbr": "2026052219279940",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133603140,
+					"prefix": "60",
+					"accNbr": "BUNDLE19279940",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 409528,
+					"relatedMainOfferCode": "409528",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-22 13:20:33",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119279941,
+					"orderItemNbr": "2026052219279941",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005723828,
+					"acctNbr": "7038512476",
+					"subsId": 101133598603,
+					"prefix": "60",
+					"accNbr": "tube1@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306434,
+					"relatedMainOfferCode": "BROADBAND_BIZ_2G",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-22 13:20:09",
+					"postpaid": "1",
+					"serviceType": 79
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108428107,
+			"orderNbr": "2605000108428107",
+			"crmOrderId": 2605000108428107,
+			"crmOrderNbr": "2605000108428107",
+			"custOrderId": 2605000108428107,
+			"custOrderNbr": "2605000108428107",
+			"eventTypeName": "New Connection",
+			"externalOrderId": 2605000108428107,
+			"externalOrderNbr": "2605000108428107",
+			"custId": 101005447436,
+			"eventTypeId": 28,
+			"crmEventTypeId": 1,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-21 15:04:08",
+			"acceptDate": "2026-05-20 11:44:05",
+			"channelId": 1,
+			"channelName": "Point Of Sale",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"mainOfferName": "Unifi Home 500Mbps Premium Value With Device (36M)",
+			"orderFeeInfo": {
+				"totalCharge": 100000000,
+				"totalChargeWithTax": 100000000,
+				"displayTotalCharge": "100.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "100.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 100000000,
+				"displayChargeToPay": "100.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [
+					{
+						"paymentMethodType": "O",
+						"charge": 0
+					}
+				],
+				"subtotal": 100000000,
+				"subtotalDisplay": "100.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "TM_SEND_VOC_RESULT",
+					"attrId": 410119,
+					"attrName": "Send Voc Result",
+					"value": "Y"
+				},
+				{
+					"attrCode": "TM_ORDER_ACCESS_BW",
+					"attrId": 410066,
+					"attrName": "Order Total Bandwidth",
+					"value": "3211398_524288000"
+				},
+				{
+					"attrCode": "UM_ORDER_CUST_AUTHENTICATION_METHOD",
+					"attrId": 400271,
+					"attrName": "Customer Authentication Method",
+					"value": "Manual"
+				},
+				{
+					"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+					"attrId": 400252,
+					"attrName": "On Behalf Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_CONTACTLESS_FLAG",
+					"attrId": 101953,
+					"attrName": "Contactless Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+					"attrId": 101951,
+					"attrName": "Order Acceptance QR Code",
+					"value": "N"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605201202431555"
+				},
+				{
+					"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+					"attrId": 101023,
+					"attrName": "Customer Order Expiry Date",
+					"value": "2026-05-20 13:02:10"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_PAYED",
+					"attrId": 100764,
+					"attrName": "Order Payed",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+					"attrId": 100688,
+					"attrName": "Contact Email",
+					"value": "ginnie_low@yahoo.com"
+				},
+				{
+					"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+					"attrId": 100687,
+					"attrName": "Contact Number",
+					"value": "60192409000"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_MRC_LIST_PRICE",
+					"attrId": 100587,
+					"attrName": "MRC LIST PRICE",
+					"value": "159000000"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000119043494,
+					"orderItemNbr": "2026052019043494",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005713309,
+					"acctNbr": "7038403411",
+					"subsId": 101133150415,
+					"prefix": "60",
+					"accNbr": "BUNDLE19043494",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 441078,
+					"relatedMainOfferCode": "441078",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-21 15:04:08",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000119043497,
+					"orderItemNbr": "2026052019043497",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005713309,
+					"acctNbr": "7038403411",
+					"subsId": 101133151304,
+					"prefix": "60",
+					"accNbr": "ctsunifytv@iptv",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 432532,
+					"relatedMainOfferCode": "432532",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-21 15:01:52",
+					"postpaid": "1",
+					"serviceType": 12
+				},
+				{
+					"orderItemId": 2605000119045307,
+					"orderItemNbr": "2026052019045307",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005713309,
+					"acctNbr": "7038403411",
+					"subsId": 101133153178,
+					"prefix": "60",
+					"accNbr": "HSTB11093797",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-21 15:03:58",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000119043496,
+					"orderItemNbr": "2026052019043496",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005713309,
+					"acctNbr": "7038403411",
+					"subsId": 101133146851,
+					"prefix": "60",
+					"accNbr": "380805320",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 309108,
+					"relatedMainOfferCode": "309108",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-21 15:03:57",
+					"postpaid": "1",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000119043495,
+					"orderItemNbr": "2026052019043495",
+					"eventTypeId": 1,
+					"drmEventTypeId": 28,
+					"eventTypeName": "New Connection",
+					"acctId": 101005713309,
+					"acctNbr": "7038403411",
+					"subsId": 101133147672,
+					"prefix": "60",
+					"accNbr": "ctsunify@unifi",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 306413,
+					"relatedMainOfferCode": "BROADBAND_HOME_500M",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-21 15:03:46",
+					"postpaid": "1",
+					"serviceType": 79
+				}
+			],
+			"extData": {}
+		},
+		{
+			"orderId": 2605000108332838,
+			"orderNbr": "2605000108332838",
+			"crmOrderId": 2605000108332838,
+			"crmOrderNbr": "2605000108332838",
+			"custOrderId": 2605000108332838,
+			"custOrderNbr": "2605000108332838",
+			"eventTypeName": "Change of Plan(COP)",
+			"externalOrderId": 2605000108332838,
+			"externalOrderNbr": "2605000108332838",
+			"custId": 101003636764,
+			"eventTypeId": 594,
+			"crmEventTypeId": 594,
+			"state": "C",
+			"stateName": "Completed",
+			"stateDate": "2026-05-19 13:53:02",
+			"acceptDate": "2026-05-19 13:52:49",
+			"channelId": 87,
+			"channelName": "COP Channel",
+			"partyType": "A",
+			"partyCode": "658649",
+			"partyStaffCode": "TMRA11420",
+			"partyName": "NGEOW CHEE CHENG",
+			"companyName": "NET STREAM SERVICES HOLDINGS SDN. BHD.",
+			"orgCode": "RV10329",
+			"orgName": "PNF9452 RV724",
+			"mainOfferName": "T-COP VOICE",
+			"orderFeeInfo": {
+				"totalCharge": 0,
+				"totalChargeWithTax": 0,
+				"displayTotalCharge": "0.00",
+				"totalTax": 0,
+				"displayTotalTax": "0.00",
+				"displayTotalChargeWithTax": "0.00",
+				"totalDeliveryFee": 0,
+				"displayTotalDeliveryFee": "0.00",
+				"currencySymbol": "RM",
+				"chargeToBill": 0,
+				"displayChargeToBill": "0.00",
+				"chargeToPay": 0,
+				"displayChargeToPay": "0.00",
+				"realPay": 0,
+				"displayRealPay": "0.00",
+				"orderFeeSumList": [],
+				"subtotal": 0,
+				"subtotalDisplay": "0.00",
+				"salesInvoiceTotal": 0,
+				"salesInvoiceTotalDisplay": "0.00",
+				"advancePaymentTotal": 0,
+				"advancePaymentTotalDisplay": "0.00"
+			},
+			"attrValueList": [
+				{
+					"attrCode": "EXP_COP_ACCT_NBR",
+					"attrId": 102029,
+					"attrName": "NOVA/ICP Billing Account Number",
+					"value": "1060776067"
+				},
+				{
+					"attrCode": "EXP_COP_INFO_ID",
+					"attrId": 102020,
+					"attrName": "Record COP_SOURCE_SUBS_INFO Table ID",
+					"value": "2605000000342435"
+				},
+				{
+					"attrCode": "EXP_COP_ORDER",
+					"attrId": 102019,
+					"attrName": "Change of Plan(COP)  Order Sequence",
+					"value": "1"
+				},
+				{
+					"attrCode": "EXP_COP_FLAG",
+					"attrId": 102018,
+					"attrName": "Change of Plan(COP)  Flag",
+					"value": "Y"
+				},
+				{
+					"attrCode": "EXP_OSS_ORDER_ID",
+					"attrId": 101398,
+					"attrName": "OSS Order ID",
+					"value": "C202605191352841077"
+				},
+				{
+					"attrCode": "EXP_DELIVERY_FLAG",
+					"attrId": 100777,
+					"attrName": "Third Party Delivery Flag",
+					"value": "N"
+				},
+				{
+					"attrCode": "NOTIFY_PROVISON_FLAG",
+					"attrId": 100601,
+					"attrName": "NOTIFY_PROVISON_FLAG",
+					"value": "Y"
+				},
+				{
+					"attrCode": "OSS_ORDER_COMPLETE_DATE",
+					"attrId": 100600,
+					"attrName": "Oss Order Complete Date",
+					"value": "2026-05-19 13:53:41"
+				}
+			],
+			"paymentList": [
+				{
+					"transType": "P"
+				}
+			],
+			"orderItemList": [
+				{
+					"orderItemId": 2605000118923318,
+					"orderItemNbr": "2026051918923318",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132930300,
+					"prefix": "60",
+					"accNbr": "362635182",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 430231,
+					"relatedMainOfferCode": "430231",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:02",
+					"postpaid": "1",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000118923314,
+					"orderItemNbr": "2026051918923314",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132932105,
+					"prefix": "60",
+					"accNbr": "HS1061456660",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 307705,
+					"relatedMainOfferCode": "307705",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:01",
+					"postpaid": "1",
+					"serviceType": 90
+				},
+				{
+					"orderItemId": 2605000118923315,
+					"orderItemNbr": "2026051918923315",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132929453,
+					"prefix": "60",
+					"accNbr": "BUNDLE18923315",
+					"mainOfferType": "B",
+					"relatedMainOfferId": 430111,
+					"relatedMainOfferCode": "430111",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:02",
+					"postpaid": "1",
+					"serviceType": 51
+				},
+				{
+					"orderItemId": 2605000118923316,
+					"orderItemNbr": "2026051918923316",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132925745,
+					"prefix": "60",
+					"accNbr": "362629534",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 430279,
+					"relatedMainOfferCode": "430279",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:01",
+					"postpaid": "1",
+					"serviceType": 80
+				},
+				{
+					"orderItemId": 2605000118923317,
+					"orderItemNbr": "2026051918923317",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132921880,
+					"prefix": "60",
+					"accNbr": "qubeappssolutions123@unifibiz",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 430217,
+					"relatedMainOfferCode": "430217",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:01",
+					"postpaid": "1",
+					"serviceType": 79
+				},
+				{
+					"orderItemId": 2605000118923319,
+					"orderItemNbr": "2026051918923319",
+					"eventTypeId": 594,
+					"drmEventTypeId": 594,
+					"eventTypeName": "Change of Plan(COP)",
+					"acctId": 101003957225,
+					"acctNbr": "7020474081",
+					"subsId": 101132934035,
+					"prefix": "60",
+					"accNbr": "362639403",
+					"mainOfferType": "M",
+					"relatedMainOfferId": 430279,
+					"relatedMainOfferCode": "430279",
+					"state": "C",
+					"stateName": "Completion",
+					"stateDate": "2026-05-19 13:53:02",
+					"postpaid": "1",
+					"serviceType": 80
+				}
+			],
+			"extData": {}
+		}
+	],
+	"notEmpty": true,
+	"totalPages": 4,
+	"empty": false
+}

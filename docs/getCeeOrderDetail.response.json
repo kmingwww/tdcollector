@@ -1,0 +1,1928 @@
+{
+	"code": "200",
+	"message": "Success",
+	"data": {
+		"orderId": 2605000108876527,
+		"orderNbr": "2605000108876527",
+		"crmOrderId": 2605000108876527,
+		"crmOrderNbr": "2605000108876527",
+		"custOrderId": 2605000108876527,
+		"custOrderNbr": "2605000108876527",
+		"eventTypeName": "New Connection",
+		"externalOrderId": 2605000108876527,
+		"externalOrderNbr": "2605000108876527",
+		"custId": 101005462247,
+		"eventTypeId": 28,
+		"crmEventTypeId": 1,
+		"state": "C",
+		"stateName": "Completed",
+		"stateDate": "2026-05-26 15:45:12",
+		"acceptDate": "2026-05-24 15:06:02",
+		"channelId": 29,
+		"channelName": "BPortal",
+		"partyType": "A",
+		"partyCode": "658649",
+		"partyStaffCode": "TMRA11420",
+		"partyName": "NGEOW CHEE CHENG",
+		"custInfo": {
+			"custId": 101005462247,
+			"custNbr": "3101005462247",
+			"custType": "B",
+			"custName": "BLUEWAY SDN. BHD.",
+			"custExtMap": {},
+			"certTypeCode": "BUSINESS_REGISTRATION_NUMBER",
+			"certTypeName": "Company with Business Registration Number",
+			"certNbr": "1681760-T",
+			"potentialFlag": "N",
+			"attachList": [],
+			"custAttrList": [
+				{
+					"attrCode": "TM_CORP_SUB_SEGMENT",
+					"value": "Business Entity",
+					"valueName": "Business Entity"
+				},
+				{
+					"attrCode": "UM_CASH_PAYMENT_TERM",
+					"value": "0",
+					"valueName": "Payment Immediately"
+				},
+				{
+					"attrCode": "UM_ISVERYHIGHRISK",
+					"value": "N",
+					"valueName": "No"
+				},
+				{
+					"attrCode": "UM_AUTHENTICATION_METHOD",
+					"value": "1",
+					"valueName": "MYKAD"
+				},
+				{
+					"attrCode": "UM_JL_CUST_TYPE",
+					"value": "2",
+					"valueName": "Enterprise"
+				},
+				{
+					"attrCode": "TM_BRN_FORMAT",
+					"value": "ROC",
+					"valueName": "Registration of Company(ROC)"
+				},
+				{
+					"attrCode": "TM_CORP_SEGMENT_CODE",
+					"value": "S10",
+					"valueName": "S10"
+				},
+				{
+					"attrCode": "TM_CORP_SEGMENT",
+					"value": "SME",
+					"valueName": "SME"
+				},
+				{
+					"attrCode": "CORPORATE_TYPE",
+					"value": "M",
+					"valueName": "Malaysia"
+				},
+				{
+					"attrCode": "REVENUE_LEVEL",
+					"value": "10",
+					"valueName": "No Answer Given"
+				},
+				{
+					"attrCode": "CORPORATE_LEVEL",
+					"value": "O",
+					"valueName": "Others."
+				},
+				{
+					"attrCode": "NO_OF_EMPLOYEES",
+					"value": "6",
+					"valueName": "5-30"
+				},
+				{
+					"attrCode": "CONTRACTING_PARTY",
+					"value": "0",
+					"valueName": "Inside Malaysia"
+				},
+				{
+					"attrCode": "UM_TEMP_MINUS_CREDITLIMIT",
+					"value": "2064000000"
+				},
+				{
+					"attrCode": "OFFICE_NO",
+					"value": "60197154118"
+				},
+				{
+					"attrCode": "COMPANY_EMAIL",
+					"value": "honhockngen@gmail.com"
+				},
+				{
+					"attrCode": "UM_AUTHENTICATION_CHANNEL",
+					"value": "ZSmart CRM"
+				},
+				{
+					"attrCode": "UM_UCL",
+					"value": "999999000000"
+				},
+				{
+					"attrCode": "UM_CUST_TENURE_MONTHS",
+					"value": "1"
+				},
+				{
+					"attrCode": "TM_CM_EMAIL",
+					"value": "honhockngen@gmail.com"
+				},
+				{
+					"attrCode": "TM_CM_NAME",
+					"value": "YAN SWEE HOE"
+				}
+			],
+			"contactList": [],
+			"partyCertList": [
+				{
+					"certTypeId": "8",
+					"certTypeCode": "BUSINESS_REGISTRATION_NUMBER",
+					"certTypeName": "Company with Business Registration Number",
+					"certNbr": "1681760-T"
+				}
+			],
+			"acctList": [],
+			"custAddrList": []
+		},
+		"orderFeeInfo": {
+			"totalCharge": 0,
+			"totalChargeWithTax": 0,
+			"displayTotalCharge": "0.00",
+			"totalTax": 0,
+			"displayTotalTax": "0.00",
+			"displayTotalChargeWithTax": "0.00",
+			"totalDeliveryFee": 0,
+			"displayTotalDeliveryFee": "0.00",
+			"currencySymbol": "RM",
+			"chargeToBill": 0,
+			"displayChargeToBill": "0.00",
+			"chargeToPay": 0,
+			"displayChargeToPay": "0.00",
+			"realPay": 0,
+			"displayRealPay": "0.00",
+			"orderFeeSumList": [
+				{
+					"paymentMethodType": "C",
+					"charge": 0,
+					"rentCharge": 130935484,
+					"preciseRentCharge": 130935484
+				}
+			],
+			"subtotal": 0,
+			"subtotalDisplay": "0.00",
+			"salesInvoiceTotal": 0,
+			"salesInvoiceTotalDisplay": "0.00",
+			"advancePaymentTotal": 0,
+			"advancePaymentTotalDisplay": "0.00"
+		},
+		"attrValueList": [
+			{
+				"attrCode": "EXP_MRC_LIST_PRICE",
+				"attrId": 100587,
+				"attrName": "MRC LIST PRICE",
+				"value": "369000000"
+			},
+			{
+				"attrCode": "NOTIFY_PROVISON_FLAG",
+				"attrId": 100601,
+				"attrName": "NOTIFY_PROVISON_FLAG",
+				"value": "Y"
+			},
+			{
+				"attrCode": "EXP_ORDER_CONTACT_NUMBER",
+				"attrId": 100687,
+				"attrName": "Contact Number",
+				"value": "60197154118"
+			},
+			{
+				"attrCode": "EXP_ORDER_CONTACT_EMAIL",
+				"attrId": 100688,
+				"attrName": "Contact Email",
+				"value": "honhockngen@gmail.com"
+			},
+			{
+				"attrCode": "EXP_ORDER_PAYED",
+				"attrId": 100764,
+				"attrName": "Order Payed",
+				"value": "Y"
+			},
+			{
+				"attrCode": "EXP_DELIVERY_FLAG",
+				"attrId": 100777,
+				"attrName": "Third Party Delivery Flag",
+				"value": "Y"
+			},
+			{
+				"attrCode": "EXP_CUST_ORDER_EXP_DATE",
+				"attrId": 101023,
+				"attrName": "Customer Order Expiry Date",
+				"value": "2026-05-24 16:10:07"
+			},
+			{
+				"attrCode": "EXP_OSS_ORDER_ID",
+				"attrId": 101398,
+				"attrName": "OSS Order ID",
+				"value": "C202605241510138572"
+			},
+			{
+				"attrCode": "EXP_ORDER_ACCEPT_QR_CODE",
+				"attrId": 101951,
+				"attrName": "Order Acceptance QR Code",
+				"value": "N"
+			},
+			{
+				"attrCode": "EXP_CONTACTLESS_FLAG",
+				"attrId": 101953,
+				"attrName": "Contactless Flag",
+				"value": "Y"
+			},
+			{
+				"attrCode": "UM_ORDER_ON_BEHALF_FLAG",
+				"attrId": 400252,
+				"attrName": "On Behalf Flag",
+				"value": "N"
+			},
+			{
+				"attrCode": "TM_ORDER_ACCESS_BW",
+				"attrId": 410066,
+				"attrName": "Order Total Bandwidth",
+				"value": "7050325_2147483648"
+			},
+			{
+				"attrCode": "TM_SEND_VOC_RESULT",
+				"attrId": 410119,
+				"attrName": "Send Voc Result",
+				"value": "Y"
+			}
+		],
+		"paymentList": [
+			{
+				"transType": "P",
+				"displayAmount": "0.00"
+			}
+		],
+		"deliveryList": [
+			{
+				"deliveryMethod": "E",
+				"contactNbr": "0197154118",
+				"detailAddr": "159 jalan setia 4/5 taman setia indah  81100  Johor Bahru,Johor  Malaysia",
+				"state": "A",
+				"displayAddr": "159 jalan setia 4/5 taman setia indah  81100  Johor Bahru,Johor  Malaysia",
+				"deliveryItemList": [
+					{
+						"deliveryState": "A"
+					}
+				],
+				"appointmentDate": "20260609154439"
+			}
+		],
+		"orderItemList": [
+			{
+				"orderItemId": 2605000119564150,
+				"orderItemNbr": "2026052419564150",
+				"eventTypeId": 1,
+				"drmEventTypeId": 28,
+				"eventTypeName": "New Connection",
+				"acctId": 101005729603,
+				"acctNbr": "7038563834",
+				"subsId": 101134069719,
+				"prefix": "60",
+				"accNbr": "BUNDLE19564150",
+				"primaryFlag": "N",
+				"mainOfferCode": "409528",
+				"mainOfferNbr": "699905570383270206",
+				"mainOfferType": "B",
+				"mainOfferName": "Unifi Biz 2Gbps Ultra TV (Free TV75)(MESH7)",
+				"relatedMainOfferId": 409528,
+				"relatedMainOfferCode": "409528",
+				"state": "C",
+				"stateName": "Completion",
+				"stateDate": "2026-05-26 15:45:12",
+				"postpaid": "1",
+				"serviceType": 51,
+				"offerInstList": [
+					{
+						"attrValueList": [
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100909,
+								"value": "A",
+								"attrName": "Terminal Type",
+								"changeModel": "",
+								"attrCode": "EXP_BASE_TERMINAL_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101032,
+								"value": "1954961",
+								"attrName": "Address Survery ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_ADDRESS_SURVEY_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101421,
+								"value": "19-01 JALAN AUSTIN HEIGHTS 8/3 -  TAMAN AUSTIN HEIGHTS JOHOR BAHRU JOHOR MALAYSIA 81100",
+								"attrName": "Installation Address",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_ADDRESS_FULL_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 101422,
+								"value": "10201521229",
+								"attrName": "Standard Address ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_STD_ADDR_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101974,
+								"value": "PN",
+								"attrName": "Exchange Id",
+								"changeModel": "",
+								"attrCode": "EXP_EXCHANGE_CODE",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"offerType": "2",
+						"offerName": "Unifi Biz 2Gbps Ultra TV (Free TV75)(MESH7)",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 409528
+					}
+				],
+				"attrValueList": [
+					{
+						"attrCode": "EXP_FIX_INSTALL_ORDER_ID",
+						"attrId": 100910,
+						"value": "2605000002398791"
+					},
+					{
+						"attrCode": "EXP_ACCESS_INSTALL_TYPE",
+						"attrId": 100911,
+						"value": "APPOINTMENT"
+					},
+					{
+						"attrCode": "EXP_RUSH_ORDER_LV",
+						"attrId": 100912,
+						"value": "Y"
+					},
+					{
+						"attrCode": "EXP_NEED_PROVISION",
+						"attrId": 101353,
+						"value": "N"
+					}
+				],
+				"feeList": [],
+				"agreementList": [
+					{
+						"agreementId": 409669,
+						"agreementName": "Unifi Biz 2Gbps Ultra TV (Free TV75)(MESH7) (36 Months)",
+						"agreementType": "SUBS_PLAN",
+						"operationType": "A",
+						"effDate": "2026-05-26 00:00:00",
+						"expDate": "2029-05-26 00:00:00"
+					}
+				],
+				"displayFeeList": [],
+				"selfPickupDeviceList": []
+			},
+			{
+				"orderItemId": 2605000119564151,
+				"orderItemNbr": "2026052419564151",
+				"eventTypeId": 1,
+				"drmEventTypeId": 28,
+				"eventTypeName": "New Connection",
+				"acctId": 101005729603,
+				"acctNbr": "7038563834",
+				"subsId": 101134075122,
+				"prefix": "60",
+				"accNbr": "blue2@unifibiz",
+				"primaryFlag": "N",
+				"mainOfferCode": "306434",
+				"mainOfferNbr": "541548527443247138",
+				"mainOfferType": "M",
+				"mainOfferName": "unifi Biz 2Gbps",
+				"relatedMainOfferId": 306434,
+				"relatedMainOfferCode": "BROADBAND_BIZ_2G",
+				"state": "C",
+				"stateName": "Completion",
+				"stateDate": "2026-05-26 15:44:48",
+				"postpaid": "1",
+				"serviceType": 79,
+				"offerInstList": [
+					{
+						"attrValueList": [
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100848,
+								"value": "Y",
+								"attrName": "Rent To LastCycle",
+								"changeModel": "",
+								"attrCode": "EXP_RENT_TO_LASTCYCLE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101824,
+								"value": "E",
+								"attrName": "Goods Delivery Method",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_DELIVERY_METHOD",
+								"visible": "N"
+							},
+							{
+								"attrId": 101847,
+								"value": "2",
+								"attrName": "Billing Start Time By",
+								"changeModel": "",
+								"attrCode": "EXP_BILLING_START_TIME_BY",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 400135,
+								"value": "DTV00",
+								"attrName": "GL Product Code",
+								"changeModel": "",
+								"attrCode": "UM_GL_RPODUCT_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410076,
+								"value": "SMART_DEVICE",
+								"attrName": "Additional Offer Category",
+								"changeModel": "",
+								"attrCode": "TM_ADDITIONAL_OFFER_CATG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410088,
+								"value": "MFRS",
+								"attrName": "MFRS tagging",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_TAGGING",
+								"visible": "N"
+							},
+							{
+								"attrId": 410138,
+								"value": "EVENT BASED",
+								"attrName": "MFRS Event Type",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_EVENT_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "7399000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410255,
+								"value": "101209110009",
+								"attrName": "Bundle Subs Plan Offer inst ID",
+								"changeModel": "",
+								"attrCode": "TM_BUNDLE_OFFER_INST_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "4",
+						"offerInstId": 101209103839,
+						"offerName": "FREE TV 75inch",
+						"offerCode": "408296",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 408296,
+						"relatedOfferCode": "408296",
+						"goodsDeliveryMethodValue": "E"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100911,
+								"value": "APPOINTMENT",
+								"attrName": "Installation Type",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_INSTALL_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101010,
+								"value": "Y",
+								"attrName": "Installation Material",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_MATERIAL",
+								"visible": "N"
+							},
+							{
+								"attrId": 101103,
+								"value": "UNCFH5F32603042886",
+								"attrName": "Goods SN",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_SN",
+								"visible": "N"
+							},
+							{
+								"attrId": 101824,
+								"value": "D",
+								"attrName": "Goods Delivery Method",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_DELIVERY_METHOD",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 400135,
+								"value": "DSE38",
+								"attrName": "GL Product Code",
+								"changeModel": "",
+								"attrCode": "UM_GL_RPODUCT_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410065,
+								"value": "1000006013",
+								"attrName": "Material No.",
+								"changeModel": "",
+								"attrCode": "TM_MATERIAL_NO",
+								"visible": "N"
+							},
+							{
+								"attrId": 410076,
+								"value": "MESH",
+								"attrName": "Additional Offer Category",
+								"changeModel": "",
+								"attrCode": "TM_ADDITIONAL_OFFER_CATG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410080,
+								"value": "FIBERHOME",
+								"attrName": "Device Vendor Code",
+								"changeModel": "",
+								"attrCode": "TM_VENDOR_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410083,
+								"value": "HG6145F3",
+								"attrName": "Model Code",
+								"changeModel": "",
+								"attrCode": "TM_MODEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410088,
+								"value": "MFRS",
+								"attrName": "MFRS tagging",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_TAGGING",
+								"visible": "N"
+							},
+							{
+								"attrId": 410126,
+								"value": "MESH Wi-Fi 6 AX",
+								"attrName": "Equipment Name",
+								"changeModel": "",
+								"attrCode": "TM_EQUIPMENT_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410127,
+								"value": "RG6",
+								"attrName": "RG Version",
+								"changeModel": "",
+								"attrCode": "TM_RG_VERSION",
+								"visible": "N"
+							},
+							{
+								"attrId": 410128,
+								"value": "Combo",
+								"attrName": "RG Mode",
+								"changeModel": "",
+								"attrCode": "TM_RG_MODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410138,
+								"value": "EVENT BASED",
+								"attrName": "MFRS Event Type",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_EVENT_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "250000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410171,
+								"value": "AX3000",
+								"attrName": "Equipment Technology",
+								"changeModel": "",
+								"attrCode": "TM_EQUIPMENT_TECHNOLOGY",
+								"visible": "N"
+							},
+							{
+								"attrId": 410255,
+								"value": "101209110009",
+								"attrName": "Bundle Subs Plan Offer inst ID",
+								"changeModel": "",
+								"attrCode": "TM_BUNDLE_OFFER_INST_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "P",
+						"offerInstId": 101209105529,
+						"offerName": "MESH Wi-Fi 7 OTC - RM0",
+						"offerNbr": "698353948947583047",
+						"offerCode": "409233",
+						"effDate": "2026-05-26 15:44:21",
+						"otcPriceWithTax": 0,
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 409233,
+						"relatedOfferCode": "409233",
+						"installMaterialFlag": "Y",
+						"goodsDeliveryMethodValue": "D"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100603,
+								"value": "TL6475",
+								"attrName": "Internet Password",
+								"changeModel": "",
+								"attrCode": "EXP_INTERNET_PASSWORD",
+								"visible": "N"
+							},
+							{
+								"attrId": 100748,
+								"value": "2252800",
+								"attrName": "Internet Downlink Rate",
+								"changeModel": "",
+								"attrCode": "EXP_INTERNET_DOWNLINK_RATE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100909,
+								"value": "A",
+								"attrName": "Terminal Type",
+								"changeModel": "",
+								"attrCode": "EXP_BASE_TERMINAL_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101028,
+								"value": "1126400",
+								"attrName": "Internet Uplink Rate",
+								"changeModel": "",
+								"attrCode": "EXP_INTERNET_UPLINK_RATE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101032,
+								"value": "1954961",
+								"attrName": "Address Survery ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_ADDRESS_SURVEY_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101033,
+								"value": "2147483648",
+								"attrName": "Bandwidth",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_BW",
+								"visible": "N"
+							},
+							{
+								"attrId": 101034,
+								"value": "FTTH",
+								"attrName": "Access Technology",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_TECHNOLOGY",
+								"visible": "N"
+							},
+							{
+								"attrId": 101037,
+								"value": "LHTB12556489",
+								"attrName": "OSS Product Instance ID",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_INST_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101065,
+								"value": "2G",
+								"attrName": "ServiceProfile",
+								"changeModel": "",
+								"attrCode": "EXP_SERVICE_PROFILE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101075,
+								"value": "0",
+								"attrName": "IPTV Streams",
+								"changeModel": "",
+								"attrCode": "EXP_IPTV_STREAMS",
+								"visible": "N"
+							},
+							{
+								"attrId": 101164,
+								"value": "Standard",
+								"attrName": "QOSProfile",
+								"changeModel": "",
+								"attrCode": "EXP_QOS_PROFILE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101260,
+								"value": "pHsi",
+								"attrName": "OSS Product Code",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_SPEC_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101421,
+								"value": "19-01 JALAN AUSTIN HEIGHTS 8/3 -  TAMAN AUSTIN HEIGHTS JOHOR BAHRU JOHOR MALAYSIA 81100",
+								"attrName": "Installation Address",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_ADDRESS_FULL_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 101422,
+								"value": "10201521229",
+								"attrName": "Standard Address ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_STD_ADDR_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101974,
+								"value": "PN",
+								"attrName": "Exchange Id",
+								"changeModel": "",
+								"attrCode": "EXP_EXCHANGE_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 400108,
+								"value": "6073558079",
+								"attrName": "Bundle Member List",
+								"changeModel": "",
+								"attrCode": "UM_BUNDLE_MEMBER_LIST",
+								"visible": "N"
+							},
+							{
+								"attrId": 400110,
+								"value": "NEW",
+								"attrName": "Bundle Existing Flag",
+								"changeModel": "",
+								"attrCode": "UM_BUNDLE_EXIST_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410071,
+								"value": "unifi Business",
+								"attrName": "SAS Offer Name",
+								"changeModel": "",
+								"attrCode": "TM_SAS_OFFER_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410088,
+								"value": "MFRS",
+								"attrName": "MFRS tagging",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_TAGGING",
+								"visible": "N"
+							},
+							{
+								"attrId": 410103,
+								"value": "blue2@unifibiz",
+								"attrName": "TM Account ID",
+								"changeModel": "",
+								"attrCode": "TM_OTT_ACCT_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 410117,
+								"value": "BROADBAND",
+								"attrName": "TM Account Type",
+								"changeModel": "",
+								"attrCode": "TM_OTT_ACCT_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410125,
+								"value": "1",
+								"attrName": "Fix subscriber plan type",
+								"changeModel": "",
+								"attrCode": "TM_SUBSPLAN_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "324000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410189,
+								"value": "HSTB11104187",
+								"attrName": "Service Point Id",
+								"changeModel": "",
+								"attrCode": "TM_SERVICE_POINT_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"offerType": "M",
+						"offerName": "unifi Biz 2Gbps",
+						"offerNbr": "541548527443247138",
+						"offerCode": "306434",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 306434
+					}
+				],
+				"attrValueList": [
+					{
+						"attrCode": "OSS_ORDER_COMPLETE_DATE",
+						"attrId": 100600,
+						"value": "2026-05-26 15:44:21"
+					},
+					{
+						"attrCode": "NOTIFY_PROVISON_FLAG",
+						"attrId": 100601,
+						"value": "Y"
+					},
+					{
+						"attrCode": "EXP_FIX_INSTALL_ORDER_ID",
+						"attrId": 100910,
+						"value": "2605000002398791"
+					},
+					{
+						"attrCode": "EXP_ACCESS_INSTALL_TYPE",
+						"attrId": 100911,
+						"value": "APPOINTMENT"
+					},
+					{
+						"attrCode": "EXP_RUSH_ORDER_LV",
+						"attrId": 100912,
+						"value": "Y"
+					},
+					{
+						"attrCode": "BASE_SAG_NOTIFY_PROVISON_FLAG",
+						"attrId": 101367,
+						"value": "Y"
+					},
+					{
+						"attrCode": "BASE_NEED_RE_CALCULATE_FEE",
+						"attrId": 101790,
+						"value": "Y"
+					},
+					{
+						"attrCode": "UM_BUNDLE_SUBS_EVENT_ID",
+						"attrId": 400205,
+						"value": "1"
+					}
+				],
+				"feeList": [
+					{
+						"offerCode": "409233",
+						"offerName": "MESH Wi-Fi 7 OTC - RM0",
+						"priceType": "1",
+						"priceName": "MESH Wi-Fi 7 OTC",
+						"charge": 0,
+						"discount": 0,
+						"acctItemTypeId": 251003,
+						"priceId": 272877502,
+						"chargeWithTax": 0,
+						"chargeWithTaxDisplay": "0.00",
+						"taxList": [],
+						"currencySymbol": "RM",
+						"receivable": 0,
+						"paymentMethodType": "C"
+					},
+					{
+						"offerCode": "DPBROADBAND_BIZ_2G",
+						"priceType": "2",
+						"priceName": "Unifi Biz 2Gbps",
+						"charge": 130935484,
+						"acctItemTypeId": 40013,
+						"chargeWithTax": 130935484,
+						"chargeWithTaxDisplay": "130.94",
+						"tax": 0,
+						"taxDisplay": "0.00",
+						"currencySymbol": "RM",
+						"receivable": 130935484,
+						"paymentMethodType": "C"
+					}
+				],
+				"agreementList": [
+					{
+						"agreementId": 409624,
+						"agreementName": "MESH Wi-Fi 7(24 Months)",
+						"agreementType": "ADD_ON_OFFER",
+						"operationType": "A",
+						"effDate": "2026-05-26 00:00:00",
+						"expDate": "2028-05-26 00:00:00",
+						"agreementOtcFeeList": []
+					},
+					{
+						"agreementId": 405404,
+						"agreementName": "unifi Biz",
+						"agreementType": "SUBS_PLAN",
+						"operationType": "A",
+						"effDate": "2026-05-26 00:00:00",
+						"expDate": "2029-05-26 00:00:00",
+						"agreementOtcFeeList": []
+					},
+					{
+						"agreementId": 431922,
+						"agreementName": "FREE TV 75inch (36 Months)",
+						"agreementType": "ADD_ON_OFFER",
+						"operationType": "A",
+						"effDate": "2025-06-17 00:00:00",
+						"expDate": "2100-01-01 00:00:00",
+						"agreementOtcFeeList": []
+					}
+				],
+				"specialDisplayFeeList": [],
+				"displayFeeList": [],
+				"selfPickupDeviceList": []
+			},
+			{
+				"orderItemId": 2605000119564152,
+				"orderItemNbr": "2026052419564152",
+				"eventTypeId": 1,
+				"drmEventTypeId": 28,
+				"eventTypeName": "New Connection",
+				"acctId": 101005729603,
+				"acctNbr": "7038563834",
+				"subsId": 101134068857,
+				"prefix": "60",
+				"accNbr": "73558079",
+				"primaryFlag": "N",
+				"mainOfferType": "M",
+				"mainOfferName": "Business Voice",
+				"relatedMainOfferId": 309319,
+				"state": "C",
+				"stateName": "Completion",
+				"stateDate": "2026-05-26 15:45:00",
+				"postpaid": "1",
+				"serviceType": 80,
+				"offerInstList": [
+					{
+						"attrValueList": [
+							{
+								"attrId": 100752,
+								"value": "H",
+								"attrName": "Monthly Rent Charging Type",
+								"changeModel": "",
+								"attrCode": "EXP_MONTHLY_RENT_CHARGING_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410104,
+								"value": "Voice - Call Line Identification Presentation (CLIP)",
+								"attrName": "B2O Offer Name",
+								"changeModel": "",
+								"attrCode": "TM_BO_OFFER_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "0",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410255,
+								"value": "101209110009",
+								"attrName": "Bundle Subs Plan Offer inst ID",
+								"changeModel": "",
+								"attrCode": "TM_BUNDLE_OFFER_INST_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "P",
+						"offerInstId": 101209100921,
+						"offerName": "Voice - Call Line Identification Presentation (CLIP)",
+						"offerNbr": "543269971889901570",
+						"offerCode": "306820",
+						"effDate": "2026-05-26 15:44:25",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 306820,
+						"relatedOfferCode": "306820"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100752,
+								"value": "H",
+								"attrName": "Monthly Rent Charging Type",
+								"changeModel": "",
+								"attrCode": "EXP_MONTHLY_RENT_CHARGING_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410104,
+								"value": "Standard Offering Allow All",
+								"attrName": "B2O Offer Name",
+								"changeModel": "",
+								"attrCode": "TM_BO_OFFER_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "0",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410255,
+								"value": "101209110009",
+								"attrName": "Bundle Subs Plan Offer inst ID",
+								"changeModel": "",
+								"attrCode": "TM_BUNDLE_OFFER_INST_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "P",
+						"offerInstId": 101209100920,
+						"offerName": "Standard Offering Allow All",
+						"offerNbr": "548450314096807968",
+						"brief": "<p>Standard Offering Allow All</p>",
+						"offerCode": "306821",
+						"effDate": "2026-05-26 15:44:25",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 306821,
+						"relatedOfferCode": "306821"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100752,
+								"value": "N",
+								"attrName": "Monthly Rent Charging Type",
+								"changeModel": "",
+								"attrCode": "EXP_MONTHLY_RENT_CHARGING_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100848,
+								"value": "Y",
+								"attrName": "Rent To LastCycle",
+								"changeModel": "",
+								"attrCode": "EXP_RENT_TO_LASTCYCLE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101007,
+								"value": "N",
+								"attrName": "Goods Returned",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_RETURNED",
+								"visible": "N"
+							},
+							{
+								"attrId": 101010,
+								"value": "Y",
+								"attrName": "Installation Material",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_MATERIAL",
+								"visible": "N"
+							},
+							{
+								"attrId": 101103,
+								"value": "CPOGELGC2601000913",
+								"attrName": "Goods SN",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_SN",
+								"visible": "N"
+							},
+							{
+								"attrId": 101824,
+								"value": "D",
+								"attrName": "Goods Delivery Method",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_DELIVERY_METHOD",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 400135,
+								"value": "MFS01",
+								"attrName": "GL Product Code",
+								"changeModel": "",
+								"attrCode": "UM_GL_RPODUCT_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410065,
+								"value": "1000002961",
+								"attrName": "Material No.",
+								"changeModel": "",
+								"attrCode": "TM_MATERIAL_NO",
+								"visible": "N"
+							},
+							{
+								"attrId": 410083,
+								"value": "DECT",
+								"attrName": "Model Code",
+								"changeModel": "",
+								"attrCode": "TM_MODEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410088,
+								"value": "MFRS",
+								"attrName": "MFRS tagging",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_TAGGING",
+								"visible": "N"
+							},
+							{
+								"attrId": 410126,
+								"value": "Phone",
+								"attrName": "Equipment Name",
+								"changeModel": "",
+								"attrCode": "TM_EQUIPMENT_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410138,
+								"value": "EVENT BASED",
+								"attrName": "MFRS Event Type",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_EVENT_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "77000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410255,
+								"value": "101209110009",
+								"attrName": "Bundle Subs Plan Offer inst ID",
+								"changeModel": "",
+								"attrCode": "TM_BUNDLE_OFFER_INST_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "P",
+						"offerInstId": 101209100919,
+						"offerName": "DECT PHONE S250",
+						"offerNbr": "635385355771887758",
+						"offerCode": "308927",
+						"effDate": "2026-05-26 15:44:25",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 308927,
+						"relatedOfferCode": "308927",
+						"installMaterialFlag": "Y",
+						"goodsDeliveryMethodValue": "D"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100909,
+								"value": "A",
+								"attrName": "Terminal Type",
+								"changeModel": "",
+								"attrCode": "EXP_BASE_TERMINAL_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101032,
+								"value": "1954961",
+								"attrName": "Address Survery ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_ADDRESS_SURVEY_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101033,
+								"value": "0",
+								"attrName": "Bandwidth",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_BW",
+								"visible": "N"
+							},
+							{
+								"attrId": 101034,
+								"value": "FTTH",
+								"attrName": "Access Technology",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_TECHNOLOGY",
+								"visible": "N"
+							},
+							{
+								"attrId": 101037,
+								"value": "VLMV12555354",
+								"attrName": "OSS Product Instance ID",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_INST_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101260,
+								"value": "pVoip",
+								"attrName": "OSS Product Code",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_SPEC_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101421,
+								"value": "19-01 JALAN AUSTIN HEIGHTS 8/3 -  TAMAN AUSTIN HEIGHTS JOHOR BAHRU JOHOR MALAYSIA 81100",
+								"attrName": "Installation Address",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_ADDRESS_FULL_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 101422,
+								"value": "10201521229",
+								"attrName": "Standard Address ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_STD_ADDR_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101974,
+								"value": "PN",
+								"attrName": "Exchange Id",
+								"changeModel": "",
+								"attrCode": "EXP_EXCHANGE_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 400109,
+								"value": "101134075122",
+								"attrName": "Bundle Principle Subs ID",
+								"changeModel": "",
+								"attrCode": "UM_BUNDLE_PRINCIPLE_SUBS_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 400110,
+								"value": "NEW",
+								"attrName": "Bundle Existing Flag",
+								"changeModel": "",
+								"attrCode": "UM_BUNDLE_EXIST_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 400207,
+								"value": "60blue2@unifibiz",
+								"attrName": "Bundle Principle Subs MSISDN",
+								"changeModel": "",
+								"attrCode": "UM_BUNDLE_PRINCIPLE_MSISDN",
+								"visible": "N"
+							},
+							{
+								"attrId": 410077,
+								"value": "Y",
+								"attrName": "VOBB First Line Flag",
+								"changeModel": "",
+								"attrCode": "TM_VOBB_FIRST_LINE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410088,
+								"value": "MFRS",
+								"attrName": "MFRS tagging",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_TAGGING",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "45000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410189,
+								"value": "HSTB11104187",
+								"attrName": "Service Point Id",
+								"changeModel": "",
+								"attrCode": "TM_SERVICE_POINT_ID",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"offerType": "2",
+						"offerName": "Business Voice",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 309319
+					}
+				],
+				"attrValueList": [
+					{
+						"attrCode": "OSS_ORDER_COMPLETE_DATE",
+						"attrId": 100600,
+						"value": "2026-05-26 15:44:25"
+					},
+					{
+						"attrCode": "NOTIFY_PROVISON_FLAG",
+						"attrId": 100601,
+						"value": "Y"
+					},
+					{
+						"attrCode": "EXP_FIX_INSTALL_ORDER_ID",
+						"attrId": 100910,
+						"value": "2605000002398791"
+					},
+					{
+						"attrCode": "EXP_ACCESS_INSTALL_TYPE",
+						"attrId": 100911,
+						"value": "APPOINTMENT"
+					},
+					{
+						"attrCode": "EXP_RUSH_ORDER_LV",
+						"attrId": 100912,
+						"value": "Y"
+					},
+					{
+						"attrCode": "BASE_NEED_RE_CALCULATE_FEE",
+						"attrId": 101790,
+						"value": "Y"
+					},
+					{
+						"attrCode": "UM_BUNDLE_SUBS_EVENT_ID",
+						"attrId": 400205,
+						"value": "1"
+					},
+					{
+						"attrCode": "TM_MAINTAN_DEL_NUMBER",
+						"attrId": 410168,
+						"value": "N"
+					}
+				],
+				"feeList": [
+					{
+						"offerCode": "DP309319",
+						"priceType": "2",
+						"priceName": "VoBB BiZ SME",
+						"charge": 0,
+						"acctItemTypeId": 40273,
+						"chargeWithTax": 0,
+						"chargeWithTaxDisplay": "0.00",
+						"tax": 0,
+						"taxDisplay": "0.00",
+						"currencySymbol": "RM",
+						"receivable": 0,
+						"paymentMethodType": "C"
+					}
+				],
+				"agreementList": [
+					{
+						"agreementId": 409002,
+						"agreementName": "Business Voice (24 Months)",
+						"agreementType": "SUBS_PLAN",
+						"operationType": "A",
+						"effDate": "2026-05-26 00:00:00",
+						"expDate": "2028-05-26 00:00:00",
+						"agreementOtcFeeList": []
+					}
+				],
+				"specialDisplayFeeList": [],
+				"displayFeeList": [],
+				"selfPickupDeviceList": []
+			},
+			{
+				"orderItemId": 2605000119564266,
+				"orderItemNbr": "2026052419564266",
+				"eventTypeId": 1,
+				"drmEventTypeId": 28,
+				"eventTypeName": "New Connection",
+				"acctId": 101005729603,
+				"acctNbr": "7038563834",
+				"subsId": 101134067839,
+				"prefix": "60",
+				"accNbr": "HSTB11104187",
+				"primaryFlag": "N",
+				"mainOfferCode": "307705",
+				"mainOfferNbr": "549411144431304706",
+				"mainOfferType": "M",
+				"mainOfferName": "BitStream",
+				"relatedMainOfferId": 307705,
+				"relatedMainOfferCode": "307705",
+				"state": "C",
+				"stateName": "Completion",
+				"stateDate": "2026-05-26 15:44:54",
+				"postpaid": "1",
+				"serviceType": 90,
+				"offerInstList": [
+					{
+						"attrValueList": [
+							{
+								"attrId": 101007,
+								"value": "N",
+								"attrName": "Goods Returned",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_RETURNED",
+								"visible": "N"
+							},
+							{
+								"attrId": 101010,
+								"value": "Y",
+								"attrName": "Installation Material",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_MATERIAL",
+								"visible": "N"
+							},
+							{
+								"attrId": 101103,
+								"value": "UNCFH5F32603044805",
+								"attrName": "Goods SN",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_SN",
+								"visible": "N"
+							},
+							{
+								"attrId": 101104,
+								"value": "HG6145F3",
+								"attrName": "EAN",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_EAN",
+								"visible": "N"
+							},
+							{
+								"attrId": 101824,
+								"value": "D",
+								"attrName": "Goods Delivery Method",
+								"changeModel": "",
+								"attrCode": "EXP_GOODS_DELIVERY_METHOD",
+								"visible": "N"
+							},
+							{
+								"attrId": 101984,
+								"value": "Y",
+								"attrName": "Cycle Forward Ignore Delete For Billing",
+								"changeModel": "",
+								"attrCode": "EXP_CYCLE_FORWARD_IGNORE_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 400135,
+								"value": "DSE39",
+								"attrName": "GL Product Code",
+								"changeModel": "",
+								"attrCode": "UM_GL_RPODUCT_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410065,
+								"value": "1000006013",
+								"attrName": "Material No.",
+								"changeModel": "",
+								"attrCode": "TM_MATERIAL_NO",
+								"visible": "N"
+							},
+							{
+								"attrId": 410076,
+								"value": "COMBOX",
+								"attrName": "Additional Offer Category",
+								"changeModel": "",
+								"attrCode": "TM_ADDITIONAL_OFFER_CATG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410080,
+								"value": "FIBERHOME",
+								"attrName": "Device Vendor Code",
+								"changeModel": "",
+								"attrCode": "TM_VENDOR_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410085,
+								"value": "1",
+								"attrName": "Device Voice Port Number",
+								"changeModel": "",
+								"attrCode": "TM_ATA_PORT_NUM",
+								"visible": "N"
+							},
+							{
+								"attrId": 410126,
+								"value": "Wi-Fi (RG)",
+								"attrName": "Equipment Name",
+								"changeModel": "",
+								"attrCode": "TM_EQUIPMENT_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 410127,
+								"value": "RG6",
+								"attrName": "RG Version",
+								"changeModel": "",
+								"attrCode": "TM_RG_VERSION",
+								"visible": "N"
+							},
+							{
+								"attrId": 410128,
+								"value": "Combo",
+								"attrName": "RG Mode",
+								"changeModel": "",
+								"attrCode": "TM_RG_MODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410130,
+								"value": "20290524000000",
+								"attrName": "No ETP Start Date",
+								"changeModel": "",
+								"attrCode": "TM_NO_NEED_ETP_START_DATE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410138,
+								"value": "EVENT BASED",
+								"attrName": "MFRS Event Type",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_EVENT_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410162,
+								"value": "250000000",
+								"attrName": "MFRS Standard Sales Price",
+								"changeModel": "",
+								"attrCode": "TM_MFRS_SSP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410171,
+								"value": "AX3000",
+								"attrName": "Equipment Technology",
+								"changeModel": "",
+								"attrCode": "TM_EQUIPMENT_TECHNOLOGY",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"effType": "A",
+						"offerType": "P",
+						"offerInstId": 101209108025,
+						"offerName": "Fiberhome COMBO BOX AX3000",
+						"offerNbr": "541541425303781402",
+						"brief": "<div class=\"ewa-rteLine\">For speed 800Mbps and below</div>\n<div class=\"ewa-rteLine\">(AX3000)</div>",
+						"thumbImageUrl": "https://myaccount.unifi.com.my/scd_ceeattach/CONTROLLED/media/202410/10/20241010152845318png.png",
+						"offerCode": "305906",
+						"effDate": "2026-05-26 15:44:30",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 305906,
+						"relatedOfferCode": "305906",
+						"installMaterialFlag": "Y",
+						"goodsDeliveryMethodValue": "D"
+					},
+					{
+						"attrValueList": [
+							{
+								"attrId": 100815,
+								"value": "Business Customer Care",
+								"attrName": "New Subscriber Channel Code",
+								"changeModel": "",
+								"attrCode": "EXP_NEW_CHANNEL_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 100909,
+								"value": "A",
+								"attrName": "Terminal Type",
+								"changeModel": "",
+								"attrCode": "EXP_BASE_TERMINAL_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101034,
+								"value": "FTTH",
+								"attrName": "Access Technology",
+								"changeModel": "",
+								"attrCode": "EXP_ACCESS_TECHNOLOGY",
+								"visible": "N"
+							},
+							{
+								"attrId": 101037,
+								"value": "260524151072138587",
+								"attrName": "OSS Product Instance ID",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_INST_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101260,
+								"value": "pFixAccess",
+								"attrName": "OSS Product Code",
+								"changeModel": "",
+								"attrCode": "EXP_OSS_PROD_SPEC_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 101421,
+								"value": "19-01 JALAN AUSTIN HEIGHTS 8/3 -  TAMAN AUSTIN HEIGHTS JOHOR BAHRU JOHOR MALAYSIA 81100",
+								"attrName": "Installation Address",
+								"changeModel": "",
+								"attrCode": "EXP_INSTALL_ADDRESS_FULL_NAME",
+								"visible": "N"
+							},
+							{
+								"attrId": 101422,
+								"value": "10201521229",
+								"attrName": "Standard Address ID",
+								"changeModel": "",
+								"attrCode": "EXP_FIX_STD_ADDR_ID",
+								"visible": "N"
+							},
+							{
+								"attrId": 101974,
+								"value": "PN",
+								"attrName": "Exchange Id",
+								"changeModel": "",
+								"attrCode": "EXP_EXCHANGE_CODE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410053,
+								"value": "N",
+								"attrName": "Shared_BTU Flag",
+								"changeModel": "",
+								"attrCode": "TM_SHARED_BTU_FLAG",
+								"visible": "N"
+							},
+							{
+								"attrId": 410054,
+								"value": "PN_C093_DP0038",
+								"attrName": "Main DP",
+								"changeModel": "",
+								"attrCode": "TM_MAIN_DP",
+								"visible": "N"
+							},
+							{
+								"attrId": 410056,
+								"value": "THREE STOREY SHOP",
+								"attrName": "Premise Type",
+								"changeModel": "",
+								"attrCode": "TM_PREMISE_TYPE",
+								"visible": "N"
+							},
+							{
+								"attrId": 410125,
+								"value": "1",
+								"attrName": "Fix subscriber plan type",
+								"changeModel": "",
+								"attrCode": "TM_SUBSPLAN_TYPE",
+								"visible": "N"
+							}
+						],
+						"actType": "A",
+						"offerType": "M",
+						"offerName": "BitStream",
+						"offerNbr": "549411144431304706",
+						"offerCode": "307705",
+						"displayOtcPriceWithTax": "0.00",
+						"currencySymbol": "RM",
+						"relatedOfferId": 307705
+					}
+				],
+				"attrValueList": [
+					{
+						"attrCode": "OSS_ORDER_COMPLETE_DATE",
+						"attrId": 100600,
+						"value": "2026-05-26 15:44:30"
+					},
+					{
+						"attrCode": "NOTIFY_PROVISON_FLAG",
+						"attrId": 100601,
+						"value": "Y"
+					},
+					{
+						"attrCode": "EXP_FIX_INSTALL_ORDER_ID",
+						"attrId": 100910,
+						"value": "2605000002398791"
+					},
+					{
+						"attrCode": "EXP_ACCESS_INSTALL_TYPE",
+						"attrId": 100911,
+						"value": "APPOINTMENT"
+					},
+					{
+						"attrCode": "EXP_RUSH_ORDER_LV",
+						"attrId": 100912,
+						"value": "Y"
+					},
+					{
+						"attrCode": "EXP_FORCE_PROV_SUBS_EVENT",
+						"attrId": 101355,
+						"value": "1"
+					},
+					{
+						"attrCode": "BASE_NEED_RE_CALCULATE_FEE",
+						"attrId": 101790,
+						"value": "Y"
+					}
+				],
+				"feeList": [],
+				"agreementList": [],
+				"displayFeeList": [],
+				"selfPickupDeviceList": []
+			}
+		],
+		"installationInfoList": [
+			{
+				"displayAddress": "19-01 JALAN AUSTIN HEIGHTS 8/3 -  TAMAN AUSTIN HEIGHTS JOHOR BAHRU JOHOR MALAYSIA 81100",
+				"installationContactId": "101003744235",
+				"installationInfoId": 2605000002398791,
+				"extData": {
+					"rushOrder": "Y",
+					"installType": "APPOINTMENT"
+				},
+				"rushOrder": "Y",
+				"installType": "APPOINTMENT",
+				"rushOrderName": "Yes",
+				"installTypeName": "Appointment",
+				"custContactDto": {
+					"contactId": 101003744235,
+					"contactNbr": "60197154118",
+					"email": "honhockngen@gmail.com",
+					"contactName": "YAN SWEE HOE",
+					"primaryFlag": "1",
+					"custId": 101005462247
+				},
+				"appointmentInfo": {
+					"appointmentNo": "TAS19E62F640E94",
+					"appointmentStartTime": "20260526150000",
+					"appointmentEndTime": "20260526173000",
+					"appointmentPreference": "DOW",
+					"appointmentPreferenceName": "Anyday/Anytime",
+					"extData": {}
+				}
+			}
+		],
+		"attachmentList": [
+			{
+				"attachmentType": "11",
+				"fileName": "10-pg-blank.pdf",
+				"url": "COC_20265-6a12a3ad4535ce691e482301"
+			},
+			{
+				"attachmentType": "7",
+				"fileName": "10-pg-blank.pdf",
+				"url": "COC_20265-6a12a3bf239e0a5a203da534"
+			},
+			{
+				"attachmentType": "6",
+				"fileName": "ERF20260524_12566260.pdf",
+				"url": "COC_2605-6a12a45ffd88ac6a8426e16b"
+			}
+		],
+		"extData": {},
+		"dealerOrder": true,
+		"drmPartyType": "A",
+		"canCancel": "N"
+	}
+}

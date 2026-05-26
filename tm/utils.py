@@ -11,10 +11,41 @@ def get_residential_voice_number(residential_voice_item):
         return residential_voice_item["prefix"] + residential_voice_item["accNbr"]
     return None
 
+def _build_fallback_datapoint(staff, order):
+    order_items = order.get("orderItemList", [])
+    internet_items = next((x for x in order_items if x.get("serviceType") == 79), None)
+    residential_voice_items = next((x for x in order_items if x.get("serviceType") == 80), None)
+    uni5g_items = next((x for x in order_items if x.get("serviceType") == 15), None)
+
+    return {
+        "order_id": str(order.get("orderId")),
+        "staffName": staff.get("staffName"),
+        "status": order.get("stateName"),
+        "created_date": order.get("acceptDate"),
+        "updated_date": order.get("stateDate"),
+        "installation_contact_name": None,
+        "installation_contact_email": None,
+        "installation_contact_phone": None,
+        "installation_start_time": None,
+        "installation_end_time": None,
+        "installation_address": None,
+        "customer_name": None,
+        "customer_id_type": None,
+        "customer_id": None,
+        "bundle_name": order.get("mainOfferName"),
+        "tm_account_id": internet_items.get("accNbr") if internet_items else None,
+        "account_nbr": internet_items.get("acctNbr") if internet_items else None,
+        "residential_number": get_residential_voice_number(residential_voice_items) if residential_voice_items else None,
+        "event_type_name": order.get("eventTypeName"),
+        "dms_item": None,
+        "cloud_storage_item": None,
+        "uni5g_items": uni5g_items.get("mainOfferName") if uni5g_items else None,
+        "premium_value_tv": None,
+    }
+
 @retry(exceptions=Exception, tries=5, delay=10)
 def process_order(staff, order):
     try:
-        order_id = order["orderId"]
         get_order_detail_data = {
             "custOrderId": order["orderId"],
             "custOrderNbr": order["orderNbr"],
@@ -26,7 +57,7 @@ def process_order(staff, order):
         
         if len(installation_info_list) != 1:
             logger.info(
-                f"WARNING: NO INSTALLATION POSSIBLE for {staff["staffName"]} - {order_detail.get("orderId")}"
+                f"WARNING: NO INSTALLATION POSSIBLE for {staff['staffName']} - {order_detail.get('orderId')}"
             )
 
         installation_info = (
@@ -117,6 +148,6 @@ def process_order(staff, order):
         }
         return datapoint
     except Exception as e:
-        logger.info(staff)
-        logger.info(order_id)
-        raise e
+        logger.warning(f"Failed to fetch detail for order {order.get('orderId')}: {e}")
+        return _build_fallback_datapoint(staff, order)
+
