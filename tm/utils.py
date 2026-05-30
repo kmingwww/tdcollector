@@ -41,6 +41,8 @@ def _build_fallback_datapoint(staff, order):
         "cloud_storage_item": None,
         "uni5g_items": uni5g_items.get("mainOfferName") if uni5g_items else None,
         "premium_value_tv": None,
+        "staff_code": staff.get("staffCode"),
+        "channel_name": staff.get("orgName"),
     }
 
 @retry(exceptions=Exception, tries=5, delay=10)
@@ -145,6 +147,8 @@ def process_order(staff, order):
             )
             if internet_items
             else None,
+            "staff_code": staff.get("staffCode"),
+            "channel_name": staff.get("orgName"),
         }
         return datapoint
     except Exception as e:
