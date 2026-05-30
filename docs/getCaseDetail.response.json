@@ -1,0 +1,174 @@
+{
+	"code": "200",
+	"message": "Success",
+	"data": {
+		"caseDto": {
+			"caseId": 103902998,
+			"caseCode": "103902998",
+			"custId": 101005226712,
+			"custName": "AMIER RUSYDAN BIN RAZALI",
+			"createPartyType": "F",
+			"createPartyCode": "621564",
+			"createOrgId": 625231,
+			"currentHandleOrgId": 625231,
+			"contactName": "AMIER RUSYDAN BIN RAZALI",
+			"contactPhone": "1111776883",
+			"contactEmail": "mierusydn@gmail.com",
+			"content": "LATLONG: 2.138909388628077, 102.40713272608942\nNAME: AMIER RUSYDAN BIN RAZALI\nNO TEL: 601111776883\nADDRESS: 505 JLN BUNGA RAYA BATU 13 KAMPUNG SEMPANG 77300 MERLIMAU MELAKA\nDP cadangan: ML_C017_DP0010\n",
+			"emergencyId": 331000,
+			"serviceTypeId": 635,
+			"serviceTypeCode": "FMC_ADRESS_NOT_FOUND",
+			"serviceTypeName": "FMC address is not found",
+			"sourceId": 990,
+			"sourceCode": "ORDER_CENTER",
+			"address": "505 JLN BUNGA RAYA BATU 13 KAMPUNG SEMPANG",
+			"caseState": "H",
+			"caseStateName": "Cancelled",
+			"sourceName": "Order Center",
+			"emergencyName": "Normal",
+			"createdTime": "2026-04-02 13:17:50",
+			"repeatCnt": 0,
+			"caseAttrList": [],
+			"processPartyType": "F",
+			"extMap": {
+				"offerInfo": {
+					"offerType": "7",
+					"offerName": "Unifi Home 100Mbps Premium Value (36M)",
+					"offerPrice": "89.00",
+					"offerId": 406374
+				},
+				"processTypeCode": "NEW_CONNECTION",
+				"fixedNetInfo": "{\"suggestedAddress\":null,\"lov\":\"INACCURATE LAT LONG\",\"createCttFlag\":\"N\",\"ndRemark\":\"(PFL) ALAMAT TIDAK DAPAT DIJUMPAI. MOHON BAGI LATLONG YANG LEBIH TEPAT. SERTAKAN GAMBAR/GOOGLE MAP PIN ATAS BUMBUNG DAN UTILITI BIL BUAT RUJUKAN\",\"suggestedAddressId\":null,\"offerInfo\":{\"offerType\":\"7\",\"offerName\":\"Unifi Home 100Mbps Premium Value (36M)\",\"offerPrice\":\"89.00\",\"offerId\":406374},\"processTypeCode\":\"NEW_CONNECTION\",\"addressName\":\"505 - - JALAN JALAN BUNGA RAYA BATU 13 77300 MERLIMAU MELAKA\",\"appointmentFlag\":\"N\",\"troikaId\":\"NJ-1-1000259735\",\"addressId\":null}",
+				"cttFlag": "N",
+				"lov": "INACCURATE LAT LONG",
+				"createCttFlag": "N",
+				"ndRemark": "(PFL) ALAMAT TIDAK DAPAT DIJUMPAI. MOHON BAGI LATLONG YANG LEBIH TEPAT. SERTAKAN GAMBAR/GOOGLE MAP PIN ATAS BUMBUNG DAN UTILITI BIL BUAT RUJUKAN",
+				"canSetAppointment": "N",
+				"appointmentFlag": "N",
+				"addressName": "505 - - JALAN JALAN BUNGA RAYA BATU 13 77300 MERLIMAU MELAKA",
+				"troikaId": "NJ-1-1000259735"
+			},
+			"slaId": 338015,
+			"deadDate": "20260403131750",
+			"createdDate": "20260402131750",
+			"updateDate": "20260408003033",
+			"stateDate": "20260408003033",
+			"closeDate": "20260408003033",
+			"finishDate": "20260408003033"
+		},
+		"caseAttrList": [],
+		"caseAttachmentList": [
+			{
+				"attachmentId": 1246211,
+				"caseId": 103902998,
+				"processId": 112140324,
+				"attachmentName": "PREMIS AMIER RUSYDAN BIN RAZALI.jpeg",
+				"attachmentSize": 107983,
+				"attachmentUrl": "cmV0OjA0L2FkbWluL2ZpbGUvMjAyNi8wMi8yOTU4NTExNy8yZDM3Mzk2ZjUyZTQtMzUtODkzNy5qcGVn"
+			},
+			{
+				"attachmentId": 1246212,
+				"caseId": 103902998,
+				"processId": 112140324,
+				"attachmentName": "U AMIER RUSYDAN BIN RAZALI.jpeg",
+				"attachmentSize": 99629,
+				"attachmentUrl": "cmV0OjA0L2FkbWluL2ZpbGUvMjAyNi8wMi8yOTU4NTExNy84OTc4YWQzZjdhNmEtNDAtMzQuanBlZw=="
+			},
+			{
+				"attachmentId": 1246213,
+				"caseId": 103902998,
+				"processId": 112140324,
+				"attachmentName": "MAP PIN AMIER RUSYDAN BIN RAZALI.jpeg",
+				"attachmentSize": 297080,
+				"attachmentUrl": "cmV0OjA0L2FkbWluL2ZpbGUvMjAyNi8wMi8yOTU4NTExNy85MWU0MzUyMGM2NjAtNDQtODMwOC5qcGVn"
+			},
+			{
+				"attachmentId": 1246214,
+				"caseId": 103902998,
+				"processId": 112140324,
+				"attachmentName": "IC AMIER RUSYDAN BIN RAZALI.pdf",
+				"attachmentSize": 552581,
+				"attachmentUrl": "cmV0OjA0L2FkbWluL2ZpbGUvMjAyNi8wMi8yOTU4NTExNy9iZDZmMzVhNDU2YmYtNDgtOTE1MC5wZGY="
+			}
+		],
+		"processList": [
+			{
+				"processId": 112364496,
+				"caseId": 103902998,
+				"reasonId": 11,
+				"reasonName": "Auto Cancelled Demand Due to Exceed SLA Business Rule(PFL)",
+				"eventId": 107,
+				"processTime": "2026-04-08 00:30:33",
+				"comments": "caseFmcDemandAutoCancelJobService trriger Expiration Cancel",
+				"title": "Expiration Cancel",
+				"processPartyType": "E",
+				"processPartyName": "System",
+				"processType": "C",
+				"eventName": "Cancel"
+			},
+			{
+				"processId": 112364491,
+				"caseId": 103902998,
+				"eventId": 426,
+				"processTime": "2026-04-08 00:30:33",
+				"comments": "Demand Update Cancel Case Success.",
+				"title": "Demand Update: Cancel Demand.",
+				"processPartyType": "E",
+				"processPartyName": "System",
+				"eventName": "Troika Sync Information"
+			},
+			{
+				"processId": 112149922,
+				"caseId": 103902998,
+				"eventId": 426,
+				"processTime": "2026-04-02 15:26:31",
+				"title": "Troika NBA Update.",
+				"processPartyType": "E",
+				"processPartyName": "System",
+				"eventName": "Troika Sync Information"
+			},
+			{
+				"processId": 112140327,
+				"caseId": 103902998,
+				"eventId": 108,
+				"processTime": "2026-04-02 13:17:53",
+				"title": "Create Task",
+				"processPartyType": "E",
+				"processPartyName": "System",
+				"assignOrgId": "625231",
+				"assignPartyType": "F",
+				"assignPartyCode": "621564",
+				"assignPartyName": "THAM LEONG SING @ THANG LEONG SING",
+				"assignOrgName": "BPQ2233 RV304",
+				"processType": "T",
+				"eventName": "Create Task",
+				"activityName": "Handler"
+			},
+			{
+				"processId": 112140326,
+				"caseId": 103902998,
+				"eventId": 426,
+				"processTime": "2026-04-02 13:17:52",
+				"comments": "Demand Creation Success.",
+				"title": "Demand Creation Success.",
+				"processPartyType": "E",
+				"processPartyName": "System",
+				"eventName": "Troika Sync Information"
+			},
+			{
+				"processId": 112140325,
+				"caseId": 103902998,
+				"eventId": 102,
+				"processTime": "2026-04-02 13:17:50",
+				"comments": "LATLONG: 2.138909388628077, 102.40713272608942\nNAME: AMIER RUSYDAN BIN RAZALI\nNO TEL: 601111776883\nADDRESS: 505 JLN BUNGA RAYA BATU 13 KAMPUNG SEMPANG 77300 MERLIMAU MELAKA\nDP cadangan: ML_C017_DP0010\n",
+				"title": "Submit",
+				"processOrgId": "625231",
+				"processPartyType": "F",
+				"processPartyCode": "621564",
+				"processPartyName": "THAM LEONG SING @ THANG LEONG SING",
+				"processType": "C",
+				"eventName": "Submit"
+			}
+		]
+	}
+}

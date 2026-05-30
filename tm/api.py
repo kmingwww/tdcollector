@@ -28,6 +28,60 @@ def generateSigncode(method: str, path: str, data: dict):
         return hash(path + jsonString + "32BytesString")
 
 
+# --- Staff Functions ---
+
+
+@rate_limit(calls_per_second=1)
+def get_staff(data):
+    path = "/saleschannel/qryStaffList"
+    signcode = generateSigncode("post", path, data)
+    response = requests.post(
+        f"https://dealer.unifi.com.my/portal/esales/api{path}",
+        headers={
+            "Cookie": COOKIE,
+            "signcode": signcode,
+        },
+        json=data,
+    )
+    return response
+
+
+@rate_limit(calls_per_second=1)
+def get_staff_detail(data):
+    path = "/saleschannel/getStaffDetail"
+    signcode = generateSigncode("post", path, data)
+    response = requests.post(
+        f"https://dealer.unifi.com.my/portal/esales/api{path}",
+        headers={
+            "Cookie": COOKIE,
+            "signcode": signcode,
+        },
+        json=data,
+    )
+    return response
+
+
+def get_all_staff():
+    page_number = 1
+    results = []
+
+    while True:
+        data = {"pageSize": 50, "pageNum": page_number}
+        response = get_staff(data)
+        result_json = response.json()
+        if "data" not in result_json:
+            raise Exception(response.json())
+        results = [*results, *result_json["data"]]
+        if len(result_json["data"]) != data["pageSize"]:
+            break
+        else:
+            page_number += 1
+    return results
+
+
+# --- Order Functions ---
+
+
 @rate_limit(calls_per_second=1)
 def get_order_list(data):
     path = "/cee/order/v2/getCeeOrderList"
@@ -48,6 +102,24 @@ def get_order_list(data):
         },
         json=data,
     )
+    return response
+
+
+@retry(exceptions=(requests.exceptions.HTTPError), tries=5, delay=10)
+@rate_limit(calls_per_second=1)
+def get_order_detail(data):
+    path = "/cee/order/v2/getCeeOrderDetail"
+    signcode = generateSigncode("post", path, data)
+    # data = {"custOrderId": "2502000060013514", "custOrderNbr": "2502000060013514"}
+    response = requests.post(
+        f"https://dealer.unifi.com.my/portal/esales/api{path}",
+        headers={
+            "Cookie": COOKIE,
+            "signcode": signcode,
+        },
+        json=data,
+    )
+    response.raise_for_status()
     return response
 
 
@@ -80,12 +152,15 @@ def get_all_order_list(staffId, onWayFlag, createdDateFrom=None, createdDateTo=N
     return results
 
 
+# --- Case Functions ---
+
+
 @retry(exceptions=(requests.exceptions.HTTPError), tries=5, delay=10)
 @rate_limit(calls_per_second=1)
-def get_order_detail(data):
-    path = "/cee/order/v2/getCeeOrderDetail"
+def get_case_detail(data):
+    path = "/csc/getCaseDetail"
     signcode = generateSigncode("post", path, data)
-    # data = {"custOrderId": "2502000060013514", "custOrderNbr": "2502000060013514"}
+    # data = {"caseId": "103902998"}
     response = requests.post(
         f"https://dealer.unifi.com.my/portal/esales/api{path}",
         headers={
@@ -96,51 +171,3 @@ def get_order_detail(data):
     )
     response.raise_for_status()
     return response
-
-
-@rate_limit(calls_per_second=1)
-def get_staff_detail(data):
-    path = "/saleschannel/getStaffDetail"
-    signcode = generateSigncode("post", path, data)
-    response = requests.post(
-        f"https://dealer.unifi.com.my/portal/esales/api{path}",
-        headers={
-            "Cookie": COOKIE,
-            "signcode": signcode,
-        },
-        json=data,
-    )
-    return response
-
-
-@rate_limit(calls_per_second=1)
-def get_staff(data):
-    path = "/saleschannel/qryStaffList"
-    signcode = generateSigncode("post", path, data)
-    response = requests.post(
-        f"https://dealer.unifi.com.my/portal/esales/api{path}",
-        headers={
-            "Cookie": COOKIE,
-            "signcode": signcode,
-        },
-        json=data,
-    )
-    return response
-
-
-def get_all_staff():
-    page_number = 1
-    results = []
-
-    while True:
-        data = {"pageSize": 50, "pageNum": page_number}
-        response = get_staff(data)
-        result_json = response.json()
-        if "data" not in result_json:
-            raise Exception(response.json())
-        results = [*results, *result_json["data"]]
-        if len(result_json["data"]) != data["pageSize"]:
-            break
-        else:
-            page_number += 1
-    return results
