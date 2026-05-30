@@ -16,7 +16,7 @@ from common.configurations import (
     get_case_ids_sheet_range
 )
 from gsheet.main import GSheetManager
-from tm.api import get_all_order_list, get_all_staff
+from tm.api import get_all_order_list, get_all_staff, get_case_detail
 from tm.utils import process_order
 
 load_dotenv()
@@ -170,6 +170,61 @@ def run_all():
     except Exception as ex:
         logger.error(f"run_all failed: {ex}", exc_info=True)
         raise
+
+
+@app.command()
+def sync_cases():
+    """Sync case status and troika id from TM API to 'CASE ID' sheet."""
+    manager = GSheetManager(
+        sheet_range=get_case_ids_sheet_range(),
+        key_column="case id"
+    )
+    
+    # 1. Read current data
+    df = manager.read()
+    if df.empty:
+        logger.warning("No data found in CASE ID sheet.")
+        return
+
+    # 2. Identify target columns (case-insensitive)
+    case_id_col = manager._get_column_name_case_insensitive("case id")
+    status_col = manager._get_column_name_case_insensitive("status") or "status"
+    troika_id_col = manager._get_column_name_case_insensitive("troika id") or "troika id"
+
+    if not case_id_col:
+        logger.error("Column 'case id' not found in sheet.")
+        return
+
+    # 3. Process each row
+    updated_rows = []
+    for _, row in df.iterrows():
+        case_id = str(row[case_id_col]).strip()
+        if not case_id or case_id.lower() == "nan" or case_id == "":
+            continue
+            
+        try:
+            logger.info(f"Syncing case ID: {case_id}")
+            response = get_case_detail({"caseId": case_id})
+            case_data = response.json().get("data", {}).get("caseDto", {})
+            
+            row_update = {
+                case_id_col: case_id,
+                status_col: case_data.get("caseStateName", ""),
+                troika_id_col: case_data.get("extMap", {}).get("troikaId", "")
+            }
+            updated_rows.append(row_update)
+            
+        except Exception as e:
+            logger.error(f"Failed to sync case {case_id}: {e}")
+            continue
+
+    # 4. Upsert updates
+    if updated_rows:
+        df_updates = pd.DataFrame(updated_rows)
+        manager.upsert(df_updates)
+        logger.info(f"Successfully synced {len(updated_rows)} cases.")
+    else:
+        logger.info("No updates to perform.")
 
 
 @app.command()

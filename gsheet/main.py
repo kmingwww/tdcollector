@@ -68,8 +68,12 @@ class GSheetManager:
         headers = header_result.get("values", [[]])[0]
         self.header_map = {name: i for i, name in enumerate(headers)}
         
-        if self.key_column not in self.header_map:
+        # Use case-insensitive matching for the key_column
+        actual_key_column = self._get_column_name_case_insensitive(self.key_column)
+        if not actual_key_column:
             raise ValueError(f"Key column '{self.key_column}' not found in sheet headers")
+        
+        self.key_column = actual_key_column  # Update to the actual case in the sheet
             
         # 2. Get key column values
         key_col_letter = self._get_column_letter(self.header_map[self.key_column])
@@ -89,6 +93,14 @@ class GSheetManager:
             letter = chr(index % 26 + 65) + letter
             index = index // 26 - 1
         return letter
+
+    def _get_column_name_case_insensitive(self, target_name):
+        """Finds the actual column name in the sheet that matches the target name (case-insensitive)."""
+        target_lower = target_name.lower()
+        for actual_name in self.header_map.keys():
+            if actual_name.lower() == target_lower:
+                return actual_name
+        return None
 
     @retry(exceptions=TimeoutError, tries=5, delay=10)
     def read(self):
