@@ -11,3 +11,10 @@
 # Guidelines
 - https://www.dash0.com/guides/logging-in-python
 - https://www.youtube.com/watch?v=9L77QExPmI0
+
+# Testing
+To run the unit tests, use the following command:
+```bash
+uv run pytest tests/test_gsheet_manager.py -s
+```
+This will run the mocked scalability tests (simulating 1 million rows and chunking logic) without requiring actual Google Sheets credentials.

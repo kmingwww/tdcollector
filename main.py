@@ -1,16 +1,21 @@
-from datetime import datetime, timedelta
-from typing_extensions import Annotated
+import calendar
 import logging
 import logging.config
-import calendar
+from datetime import datetime, timedelta
+from enum import Enum
 from time import sleep
+
 import pandas as pd
 import typer
-from gsheet.main import read, write
+from dotenv import load_dotenv
+from typing_extensions import Annotated
+
+from common.configurations import logging_config
+from gsheet.main import GSheetManager
 from tm.api import get_all_order_list, get_all_staff
-from configurations import logging_config
 from tm.utils import process_order
-from enum import Enum
+
+load_dotenv()
 
 logging.config.dictConfig(config=logging_config)
 logger = logging.getLogger(__name__)
@@ -31,26 +36,15 @@ def testing_loop():
 
 @app.command()
 def testing_write():
-    df = read()
-    df.set_index("order_id", inplace=True)
+    manager = GSheetManager()
     new_row_data = {
         "order_id": "2506000073552841",
         "customer_name": "NEW CUSTOMER",
         "status": "NEW STATUS",
         "updated_date": "2025-12-20 00:00:00",
     }
-    new_order_id = new_row_data['order_id']
-    new_row_df = pd.DataFrame([new_row_data]).set_index("order_id")
-
-    if new_order_id in df.index:
-        existing_updated_date = pd.to_datetime(df.loc[new_order_id, "updated_date"])
-        new_updated_date = pd.to_datetime(new_row_df.loc[new_order_id, "updated_date"])
-
-        if new_updated_date > existing_updated_date:
-            df.update(new_row_df)
-    else:
-        df = pd.concat([df, new_row_df])
-    write(df)
+    new_row_df = pd.DataFrame([new_row_data])
+    manager.upsert(new_row_df)
     
 class Source(str, Enum):
     ongoing = "ongoing"
@@ -88,8 +82,8 @@ def download_data(
     on_way_flag = "Y" if source == source.ongoing else "N"
 
     if gsheet:
-        df = read()
-        df.set_index("order_id", inplace=True)
+        manager = GSheetManager()
+        all_new_data = []
         for idx, staff in enumerate(staffs):
             all_order = get_all_order_list(
                 staff["staffId"], on_way_flag, created_date_from, created_date_to
@@ -97,21 +91,18 @@ def download_data(
             logger.info(f"Progress {idx+1}/{len(staffs)}: [{staff["staffId"]}] {staff["staffName"]} with order {len(all_order)} counts")
             for order in all_order:
                 new_row_data = process_order(staff=staff, order=order)
-                new_order_id = new_row_data["order_id"]
-                new_row_df = pd.DataFrame([new_row_data]).set_index("order_id")
-                if new_order_id in df.index:
-                    existing_updated_date = pd.to_datetime(
-                        df.loc[new_order_id, "updated_date"]
-                    )
-                    new_updated_date = pd.to_datetime(
-                        new_row_df.loc[new_order_id, "updated_date"]
-                    )
-
-                    if new_updated_date > existing_updated_date:
-                        df.update(new_row_df)
-                else:
-                    df = pd.concat([df, new_row_df])
-        write(df)
+                all_new_data.append(new_row_data)
+        
+        if all_new_data:
+            df_to_upsert = pd.DataFrame(all_new_data)
+            # Deduplicate by order_id, keeping the newest one if there are duplicates in the fetched data
+            if "updated_date" in df_to_upsert.columns:
+                df_to_upsert["updated_date"] = pd.to_datetime(df_to_upsert["updated_date"])
+                df_to_upsert = df_to_upsert.sort_values("updated_date").drop_duplicates("order_id", keep="last")
+            else:
+                df_to_upsert = df_to_upsert.drop_duplicates("order_id", keep="last")
+            
+            manager.upsert(df_to_upsert)
     else:
         data = []
         for idx, staff in enumerate(staffs):
