@@ -2,6 +2,8 @@ import pytest
 from unittest.mock import MagicMock, patch
 from tm.utils import process_order, _build_fallback_datapoint
 
+pytestmark = pytest.mark.unit
+
 def test_process_order_includes_staff_info():
     staff = {
         "staffName": "TEST STAFF",

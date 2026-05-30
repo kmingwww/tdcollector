@@ -4,6 +4,8 @@ import numpy as np
 from gsheet.main import GSheetManager
 from unittest.mock import MagicMock, patch
 
+pytestmark = pytest.mark.unit
+
 @pytest.fixture
 def mock_sheets_service():
     with patch("gsheet.main._get_sheets_service") as mock_get:

@@ -16,8 +16,21 @@
 - https://www.youtube.com/watch?v=9L77QExPmI0
 
 # Testing
-To run the unit tests, use the following command:
+The tests are split into unit and integration tests using pytest markers.
+
+### Unit Tests
+Run unit tests (mocked, no external dependencies):
 ```bash
-uv run pytest tests/test_gsheet_manager.py -s
+uv run pytest -m unit
 ```
-This will run the mocked scalability tests (simulating 1 million rows and chunking logic) without requiring actual Google Sheets credentials.
+
+### Integration Tests
+Run integration tests (requires valid `COOKIE` environment variable):
+```bash
+uv run pytest -m integration
+```
+
+### Running All Tests
+```bash
+uv run pytest
+```

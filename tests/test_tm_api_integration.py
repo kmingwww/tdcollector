@@ -2,11 +2,14 @@ import pytest
 import os
 from tm.api import get_staff, get_staff_detail, get_order_list, get_order_detail, get_case_detail
 
-# Skip tests if COOKIE is not set in environment
-pytestmark = pytest.mark.skipif(
-    not os.getenv("COOKIE"),
-    reason="COOKIE environment variable not set"
-)
+# Skip tests if COOKIE is not set in environment and mark as integration
+pytestmark = [
+    pytest.mark.integration,
+    pytest.mark.skipif(
+        not os.getenv("COOKIE"),
+        reason="COOKIE environment variable not set"
+    )
+]
 
 @pytest.fixture(scope="module")
 def shared_data():
