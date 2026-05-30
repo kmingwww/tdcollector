@@ -10,7 +10,11 @@ import typer
 from dotenv import load_dotenv
 from typing_extensions import Annotated
 
-from common.configurations import logging_config
+from common.configurations import (
+    logging_config,
+    get_orders_sheet_range,
+    get_case_ids_sheet_range
+)
 from gsheet.main import GSheetManager
 from tm.api import get_all_order_list, get_all_staff
 from tm.utils import process_order
@@ -36,7 +40,7 @@ def testing_loop():
 
 @app.command()
 def testing_write():
-    manager = GSheetManager()
+    manager = GSheetManager(sheet_range=get_orders_sheet_range())
     new_row_data = {
         "order_id": "2506000073552841",
         "customer_name": "NEW CUSTOMER",
@@ -82,7 +86,7 @@ def download_data(
     on_way_flag = "Y" if source == source.ongoing else "N"
 
     if gsheet:
-        manager = GSheetManager()
+        manager = GSheetManager(sheet_range=get_orders_sheet_range())
         all_new_data = []
         for idx, staff in enumerate(staffs):
             all_order = get_all_order_list(

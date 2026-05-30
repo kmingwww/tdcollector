@@ -7,7 +7,7 @@ import os
 from common import retry
 from common.configurations import (
     get_default_credential_file,
-    get_default_range_name,
+    get_orders_sheet_range,
     get_default_spreadsheet_id,
 )
 
@@ -34,14 +34,12 @@ def _get_sheets_service(credential_file=None):
 
 
 class GSheetManager:
-    def __init__(self, spreadsheet_id=None, range_name=None, key_column="order_id", credential_file=None):
+    def __init__(self, sheet_range, spreadsheet_id=None, key_column="order_id", credential_file=None):
         if spreadsheet_id is None:
             spreadsheet_id = get_default_spreadsheet_id()
-        if range_name is None:
-            range_name = get_default_range_name()
             
         self.spreadsheet_id = spreadsheet_id
-        self.range_name = range_name
+        self.sheet_range = sheet_range
         self.key_column = key_column
         self.credential_file = credential_file
 
@@ -49,8 +47,8 @@ class GSheetManager:
         self.header_map = {}  # {col_name: index}
         self.row_map = {}     # {key_value: row_number_1_indexed}
         self.sheet_name = ""
-        if "!" in range_name:
-            self.sheet_name = range_name.split("!")[0]
+        if "!" in sheet_range:
+            self.sheet_name = sheet_range.split("!")[0]
 
         self.sheet = _get_sheets_service(self.credential_file)
         self._refresh_metadata()
@@ -97,7 +95,7 @@ class GSheetManager:
         """Reads the entire sheet range and returns a DataFrame."""
         result = self.sheet.values().get(
             spreadsheetId=self.spreadsheet_id, 
-            range=self.range_name
+            range=self.sheet_range
         ).execute()
         values = result.get("values", [])
 

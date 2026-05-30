@@ -25,7 +25,7 @@ def test_gsheet_manager_1m_rows_mapping(mock_sheets_service):
     
     # 2. Initialize (this calls _refresh_metadata)
     start_time = pd.Timestamp.now()
-    manager = GSheetManager("mock_id", "Sheet1!A:Z")
+    manager = GSheetManager(sheet_range="Sheet1!A:Z", spreadsheet_id="mock_id")
     end_time = pd.Timestamp.now()
     
     duration = (end_time - start_time).total_seconds()
@@ -50,7 +50,7 @@ def test_upsert_chunking_logic(mock_sheets_service):
         {"values": [[f"ID_{i}"] for i in range(10_001)]}  # Post-upsert IDs
     ]
     
-    manager = GSheetManager("mock_id", "Sheet1!A:Z")
+    manager = GSheetManager(sheet_range="Sheet1!A:Z", spreadsheet_id="mock_id")
     
     # Create an update for 10,000 rows
     df = pd.DataFrame([{"order_id": f"ID_{i+1}", "col_1": "new"} for i in range(10_000)])
@@ -79,7 +79,7 @@ def test_read_method(mock_sheets_service):
         {"values": [cols] + data} # Read call
     ]
     
-    manager = GSheetManager("mock_id", "Sheet1!A:Z")
+    manager = GSheetManager(sheet_range="Sheet1!A:Z", spreadsheet_id="mock_id")
     df = manager.read()
     
     assert isinstance(df, pd.DataFrame)
