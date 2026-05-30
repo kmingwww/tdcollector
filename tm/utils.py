@@ -76,6 +76,8 @@ def process_order(staff, order):
         datapoint = {
             "order_id": str(order_detail.get("orderId")),
             "staffName": staff.get("staffName"),
+            "staff_code": staff.get("staffCode"),
+            "channel_name": staff.get("orgName"),
             "status": order_detail.get("stateName"),
             "created_date": order_detail.get("acceptDate"),  # created date
             "updated_date": order_detail.get("stateDate"),  # update date
@@ -147,8 +149,6 @@ def process_order(staff, order):
             )
             if internet_items
             else None,
-            "staff_code": staff.get("staffCode"),
-            "channel_name": staff.get("orgName"),
         }
         return datapoint
     except Exception as e:
