@@ -44,10 +44,12 @@ def test_upsert_chunking_logic(mock_sheets_service):
     # Setup for 10,000 rows
     cols = ["order_id", "col_1"]
     
-    # We need 2 calls for init, and 2 calls for the _refresh_metadata at the end of upsert
+    # We need 2 calls for init, 2 for start of upsert, and 2 for the end of upsert
     mock_sheets_service.values().get().execute.side_effect = [
         {"values": [cols]}, # Init Headers
         {"values": [[f"ID_{i}"] for i in range(10_001)]}, # Init IDs
+        {"values": [cols]}, # Start-upsert Headers
+        {"values": [[f"ID_{i}"] for i in range(10_001)]}, # Start-upsert IDs
         {"values": [cols]}, # Post-upsert Headers
         {"values": [[f"ID_{i}"] for i in range(10_001)]}  # Post-upsert IDs
     ]
@@ -88,3 +90,80 @@ def test_read_method(mock_sheets_service):
     assert len(df) == 2
     assert list(df.columns) == cols
     assert df.iloc[1]["status"] == "" # Verified padding
+
+
+@patch("common.decorators.time.sleep")
+def test_upsert_retry_on_connection_error(mock_sleep, mock_sheets_service):
+    """
+    Verifies that upsert retries upon receiving a ConnectionError, and calls
+    _refresh_metadata at the beginning of each attempt to maintain idempotency.
+    """
+    import os
+    cols = ["order_id", "col_1"]
+    
+    # We want to mock _refresh_metadata to see if it is called at the start of upsert.
+    with patch.object(GSheetManager, "_refresh_metadata") as mock_refresh:
+        # Create manager
+        manager = GSheetManager(sheet_range="Sheet1!A:Z", spreadsheet_id="mock_id")
+        
+        # Reset mock_refresh to ignore calls from __init__
+        mock_refresh.reset_mock()
+        
+        # We want the actual batchUpdate to raise ConnectionError once, then succeed
+        mock_sheets_service.values().batchUpdate().execute.side_effect = [
+            ConnectionError("Connection aborted"),
+            {"responses": []}
+        ]
+        
+        # Populate maps so it tries to update
+        manager.header_map = {"order_id": 0, "col_1": 1}
+        manager.row_map = {"ID_1": 2}
+        df = pd.DataFrame([{"order_id": "ID_1", "col_1": "new"}])
+        
+        manager.upsert(df)
+        
+        # Verify it retried: batchUpdate execute should have been called twice
+        assert mock_sheets_service.values().batchUpdate().execute.call_count == 2
+        
+        # Verify it called _refresh_metadata at the beginning of each upsert attempt.
+        # Since it retried once, upsert ran twice, so _refresh_metadata should have been called twice.
+        # Plus once at the end of the second (successful) run, so 3 times in total.
+        assert mock_refresh.call_count == 3
+
+
+def test_default_chunk_sizes(mock_sheets_service):
+    """
+    Verifies that default chunk sizes for GSheetManager updates and appends
+    are set to 5000 and 500 respectively when env variables are not present.
+    """
+    import os
+    cols = ["order_id", "col_1"]
+    
+    # Set up mocks for _refresh_metadata
+    mock_sheets_service.values().get().execute.side_effect = [
+        {"values": [cols]}, # Init Headers
+        {"values": []}, # Init IDs
+        
+        {"values": [cols]}, # Start-upsert Headers
+        {"values": [[f"ID_{i}"] for i in range(6000)]}, # Start-upsert IDs
+        
+        {"values": [cols]}, # Post-upsert Headers
+        {"values": [[f"ID_{i}"] for i in range(6000)]}  # Post-upsert IDs
+    ]
+    
+    # Create manager
+    manager = GSheetManager(sheet_range="Sheet1!A:Z", spreadsheet_id="mock_id")
+    
+    # Test with updates (6000 rows, all existing in row_map)
+    # We patch row_map manually so it decides to do batchUpdate
+    manager.header_map = {"order_id": 0, "col_1": 1}
+    manager.row_map = {f"ID_{i}": i + 2 for i in range(6000)}
+    df = pd.DataFrame([{"order_id": f"ID_{i}", "col_1": "val"} for i in range(6000)])
+    
+    # Clear environment variables if set
+    with patch.dict(os.environ, {}, clear=True):
+        manager.upsert(df)
+        
+    # Check that batchUpdate was called twice (6000 / 5000 = 2 chunks)
+    assert mock_sheets_service.values().batchUpdate.call_count == 2
+

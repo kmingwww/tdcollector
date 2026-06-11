@@ -7,7 +7,6 @@ import os
 from common import retry
 from common.configurations import (
     get_default_credential_file,
-    get_orders_sheet_range,
     get_default_spreadsheet_id,
 )
 
@@ -190,9 +189,14 @@ class GSheetManager:
                 formatted[self.header_map[col_name]] = str(value) if pd.notnull(value) else ""
         return formatted
 
+    @retry(exceptions=(TimeoutError, ConnectionError, OSError), tries=5, delay=10)
     def upsert(self, df: pd.DataFrame):
         if df.empty:
             return
+        
+        # Refresh metadata at the start to fetch any successfully appended rows
+        # from a previous failed attempt, ensuring idempotency on retry.
+        self._refresh_metadata()
         
         update_data = []
         append_data = []
@@ -212,8 +216,8 @@ class GSheetManager:
         if update_data:
             # We chunk by the number of individual cell updates. 
             # Google recommends keeping payloads under 2MB. 
-            # 50,000 cells is a safe default for typical string sizes.
-            MAX_BATCH_SIZE = int(os.getenv("GSHEET_BATCH_SIZE", "50000"))
+            # 5,000 cells is a safe default for typical string sizes.
+            MAX_BATCH_SIZE = int(os.getenv("GSHEET_BATCH_SIZE", "5000"))
             
             for i in range(0, len(update_data), MAX_BATCH_SIZE):
                 chunk = update_data[i:i + MAX_BATCH_SIZE]
@@ -227,7 +231,7 @@ class GSheetManager:
         if append_data:
             # Append has a different structure; we chunk by rows.
             # Assuming 26 columns, 2000 rows is ~52,000 cells.
-            MAX_APPEND_ROWS = int(os.getenv("GSHEET_APPEND_ROWS", "2000"))
+            MAX_APPEND_ROWS = int(os.getenv("GSHEET_APPEND_ROWS", "500"))
             
             for i in range(0, len(append_data), MAX_APPEND_ROWS):
                 chunk = append_data[i:i + MAX_APPEND_ROWS]
@@ -242,3 +246,4 @@ class GSheetManager:
         
         # Refresh metadata to include new rows
         self._refresh_metadata()
+
