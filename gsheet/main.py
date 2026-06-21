@@ -4,6 +4,7 @@ from googleapiclient.discovery import build
 import pandas as pd
 import logging
 import os
+from collections import defaultdict
 from common import retry
 from common.configurations import (
     get_default_credential_file,
@@ -84,7 +85,18 @@ class GSheetManager:
         
         # 3. Build row map (skipping header at index 0)
         # Assuming key_values[0] is the header
-        self.row_map = {str(val[0]): i + 2 for i, val in enumerate(key_values[1:]) if val}
+        # Track all rows for each key; warn when duplicates are found
+        self.row_map = defaultdict(list)
+        for i, val in enumerate(key_values[1:]):
+            if val:
+                self.row_map[str(val[0])].append(i + 2)
+        duplicates = {k: v for k, v in self.row_map.items() if len(v) > 1}
+        if duplicates:
+            logger.warning(
+                "Found %d duplicate key(s) in sheet '%s'. "
+                "All occurrences will be updated. Duplicate IDs: %s",
+                len(duplicates), self.key_column, list(duplicates.keys())[:10]
+            )
 
     def _get_column_letter(self, index):
         letter = ""
@@ -207,8 +219,8 @@ class GSheetManager:
         for _, row in working_df.iterrows():
             key_val = str(row[self.key_column])
             if key_val in self.row_map:
-                row_idx = self.row_map[key_val]
-                update_data.extend(self._build_update_requests(row_idx, row))
+                for row_idx in self.row_map[key_val]:
+                    update_data.extend(self._build_update_requests(row_idx, row))
             else:
                 append_data.append(self._format_for_append(row))
         
